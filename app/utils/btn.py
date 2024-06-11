@@ -5,7 +5,7 @@ from config import ADMIN
 
 def manager_btn(chat_id ):
     buttons = []
-    buttons.append([InlineKeyboardButton(text='مدیریت رکوردر ها',callback_data='manager:accounts')])
+    buttons.append([InlineKeyboardButton(text='مدیریت رکوردر ها',callback_data='manager:recorder')])
     if chat_id == ADMIN :
         buttons.append([InlineKeyboardButton(text='مدیریت ادمین ها',callback_data='manager:admins')])
     return InlineKeyboardMarkup(buttons)
@@ -27,3 +27,24 @@ def admins_btn(admins  ):
 
     return InlineKeyboardMarkup(buttons)
 
+
+
+
+
+def recorder_lists(recorders , stage_recorder = 'none'):
+    buttons = []
+
+
+
+    start_end_time = [
+        
+        InlineKeyboardButton(text='✖️',callback_data=f'manager:recorder:rem_recorder:{stage_recorder}'),
+
+        InlineKeyboardButton(text='🔙',callback_data='manager:back'),
+        InlineKeyboardButton(text='➕',callback_data=f'manager:recorder:set_recorder:{stage_recorder}') ,
+
+    ]
+
+    buttons.append(start_end_time)
+    
+    return InlineKeyboardMarkup(buttons)
