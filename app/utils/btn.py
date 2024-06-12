@@ -43,6 +43,8 @@ def recorder_lists():
         InlineKeyboardButton(text='🔄',callback_data='manager:recorder:reload'),
 
         
+        InlineKeyboardButton(text='⏰',callback_data='manager:recorder:datetimenow'),
+
         InlineKeyboardButton(text='➕',callback_data=f'manager:recorder:set_recorder') ,
 
     ]

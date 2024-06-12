@@ -4,7 +4,7 @@ from pyrogram import Client
 from config import ADMIN
 from pyromod import listen
 from datetime import datetime
-
+from datetime import datetime , timezone
 
 
 
@@ -23,9 +23,14 @@ async def admin_manager_handler(bot , call ):
 
         elif status == 'reload' :
              await reload_recorder(bot , call )
+            
+        elif status == 'datetimenow' :
+            await date_time_now(bot , call )
 
         elif status.startswith('rm'):
              await remove_recorder(bot , call )
+        
+        
             
         
 
@@ -40,6 +45,11 @@ async def admin_manager_handler(bot , call ):
     
     
 
+
+async def date_time_now(bot , call ):
+    now_utc = datetime.now(timezone.utc)
+    formatted_time = now_utc.strftime("%Y:%m:%d %H:%M")
+    await alert(bot , call , message =f'UTC TIME NOW : {formatted_time}')
 
 
 
