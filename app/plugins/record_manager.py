@@ -1,4 +1,4 @@
-from utils import cache , btn , text  , all_admins , deleter , alert , logger , parde_date
+from utils import cache , btn , text  , all_admins , deleter , alert , logger , parse_date
 from utils import filters as f
 from pyrogram import Client 
 from config import ADMIN
@@ -66,7 +66,7 @@ async def set_recorder(bot , call ):
 
     if recorder_data and recorder_data.text :
 
-        data = parde_date(recorder_data.text)
+        data = parse_date(recorder_data.text)
         if data :
             cache.create_recorder(
                                     user = call.from_user.id ,

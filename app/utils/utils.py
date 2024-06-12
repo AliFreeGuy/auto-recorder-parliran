@@ -7,32 +7,42 @@ from datetime import datetime, timezone
 
 
 
-def parde_date(data):
-    pattern = r'^(\d{2}:\d{2}) (\d{2}:\d{2}) (\d{4}:\d{2}:\d{2})$'
+def parse_date(data):
+    # الگوی جدید برای تطبیق فرمت "date start_time end_time"
+    pattern = r'^(\d{4}:\d{2}:\d{2}) (\d{2}:\d{2}) (\d{2}:\d{2})$'
     match = re.match(pattern, data)
     
     if match:
-        start_time_str, end_time_str, date_str = match.groups()
+        date_str, start_time_str, end_time_str = match.groups()
         
-        start_time = datetime.strptime(date_str + ' ' + start_time_str, '%Y:%m:%d %H:%M')
-        end_time = datetime.strptime(date_str + ' ' + end_time_str, '%Y:%m:%d %H:%M')
+        # پارس کردن زمان شروع و پایان با تاریخ
+        start_time_naive = datetime.strptime(date_str + ' ' + start_time_str, '%Y:%m:%d %H:%M')
+        end_time_naive = datetime.strptime(date_str + ' ' + end_time_str, '%Y:%m:%d %H:%M')
         
+        # تبدیل زمان‌ها به UTC
+        start_time = start_time_naive.replace(tzinfo=timezone.utc)
+        end_time = end_time_naive.replace(tzinfo=timezone.utc)
+        
+        # زمان حال را به UTC بدست می‌آوریم
+        current_time_utc = datetime.now(timezone.utc)
+        
+        # بررسی اینکه زمان شروع نباید بعد از زمان پایان باشد
         if start_time >= end_time:
             return None
         
-        start_time_utc = start_time.replace(tzinfo=timezone.utc)
-        end_time_utc = end_time.replace(tzinfo=timezone.utc)
+        # بررسی اینکه زمان شروع و پایان نباید از زمان حال گذشته باشند
+        if start_time <= current_time_utc or end_time <= current_time_utc:
+            return None
         
-        start_time_str = start_time_utc.strftime('%Y:%m:%d %H:%M')
-        end_time_str = end_time_utc.strftime('%Y:%m:%d %H:%M')
+        start_time_str = start_time.strftime('%Y:%m:%d %H:%M')
+        end_time_str = end_time.strftime('%Y:%m:%d %H:%M')
         
-        start_timestamp = int(start_time_utc.timestamp())
-        end_timestamp = int(end_time_utc.timestamp())
+        start_timestamp = int(start_time.timestamp())
+        end_timestamp = int(end_time.timestamp())
         
         result = {
             "start_time": start_time_str,
             "start_timestamp": start_timestamp,
-
             "end_time": end_time_str,
             "end_timestamp": end_timestamp,
         }
@@ -40,8 +50,52 @@ def parde_date(data):
         return result
     else:
         return None
+    
 
 
+
+# def parde_date(data):
+#     pattern = r'^(\d{2}:\d{2}) (\d{2}:\d{2}) (\d{4}:\d{2}:\d{2})$'
+#     match = re.match(pattern, data)
+    
+#     if match:
+#         start_time_str, end_time_str, date_str = match.groups()
+        
+#         # پارس کردن زمان شروع و پایان با تاریخ
+#         start_time_naive = datetime.strptime(date_str + ' ' + start_time_str, '%Y:%m:%d %H:%M')
+#         end_time_naive = datetime.strptime(date_str + ' ' + end_time_str, '%Y:%m:%d %H:%M')
+        
+#         # تبدیل زمان‌ها به UTC
+#         start_time = start_time_naive.replace(tzinfo=timezone.utc)
+#         end_time = end_time_naive.replace(tzinfo=timezone.utc)
+        
+#         # بررسی اینکه زمان شروع نباید بعد از زمان پایان باشد
+#         if start_time >= end_time:
+#             return None
+        
+#         # زمان حال را به UTC بدست می‌آوریم
+#         current_time_utc = datetime.now(timezone.utc)
+        
+#         # بررسی اینکه زمان شروع و پایان نباید از زمان حال گذشته باشند
+#         if start_time < current_time_utc or end_time < current_time_utc:
+#             return None
+        
+#         start_time_str = start_time.strftime('%Y:%m:%d %H:%M')
+#         end_time_str = end_time.strftime('%Y:%m:%d %H:%M')
+        
+#         start_timestamp = int(start_time.timestamp())
+#         end_timestamp = int(end_time.timestamp())
+        
+#         result = {
+#             "start_time": start_time_str,
+#             "start_timestamp": start_timestamp,
+#             "end_time": end_time_str,
+#             "end_timestamp": end_timestamp,
+#         }
+        
+#         return result
+#     else:
+#         return None
 
 
 
