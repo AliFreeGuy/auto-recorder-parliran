@@ -17,6 +17,9 @@ def parde_date(data):
         start_time = datetime.strptime(date_str + ' ' + start_time_str, '%Y:%m:%d %H:%M')
         end_time = datetime.strptime(date_str + ' ' + end_time_str, '%Y:%m:%d %H:%M')
         
+        if start_time >= end_time:
+            return None
+        
         start_time_utc = start_time.replace(tzinfo=timezone.utc)
         end_time_utc = end_time.replace(tzinfo=timezone.utc)
         
