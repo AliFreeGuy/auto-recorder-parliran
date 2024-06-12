@@ -38,6 +38,7 @@ async def add_admin(client ,call ):
         await deleter(client , call , call.message.id +1   )
         data = await client.ask( chat_id = call.from_user.id ,text =text.send_admin_chat_id , timeout = 60 )
     except Exception as e  :
+        print(e)
         await deleter(client , call , call.message.id +1   )
 
         

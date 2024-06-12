@@ -15,11 +15,7 @@ async def start_manager(bot, msg):
         await bot.send_message(msg.from_user.id , text.manager_text , reply_markup = btn.manager_btn(msg.from_user.id))
 
 
-        # set_user_gap(user_chat_id=msg.from_user.id  , gap_chat_id=random_code() , gap_name='test', phone = '+989935599601')
-        # gaps = get_user_gap('+989935599601')
-        # print(gaps)
-
-
+       
 
 
 

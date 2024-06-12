@@ -2,6 +2,42 @@ from . import cache  , logger
 from config import ADMIN 
 from . import text 
 import random
+import re
+from datetime import datetime, timezone
+
+
+
+def parde_date(data):
+    pattern = r'^(\d{2}:\d{2}) (\d{2}:\d{2}) (\d{4}:\d{2}:\d{2})$'
+    match = re.match(pattern, data)
+    
+    if match:
+        start_time_str, end_time_str, date_str = match.groups()
+        
+        start_time = datetime.strptime(date_str + ' ' + start_time_str, '%Y:%m:%d %H:%M')
+        end_time = datetime.strptime(date_str + ' ' + end_time_str, '%Y:%m:%d %H:%M')
+        
+        start_time_utc = start_time.replace(tzinfo=timezone.utc)
+        end_time_utc = end_time.replace(tzinfo=timezone.utc)
+        
+        start_time_str = start_time_utc.strftime('%Y:%m:%d %H:%M')
+        end_time_str = end_time_utc.strftime('%Y:%m:%d %H:%M')
+        
+        start_timestamp = int(start_time_utc.timestamp())
+        end_timestamp = int(end_time_utc.timestamp())
+        
+        result = {
+            "start_time": start_time_str,
+            "start_timestamp": start_timestamp,
+
+            "end_time": end_time_str,
+            "end_timestamp": end_timestamp,
+        }
+        
+        return result
+    else:
+        return None
+
 
 
 
