@@ -34,7 +34,7 @@ app.conf.update(
 app.conf.beat_schedule = {
     'print-every-10-seconds': {
         'task': 'recorder_tasks.checker',
-        'schedule': 10.0,
+        'schedule': 5.0,
     },
     
 }
