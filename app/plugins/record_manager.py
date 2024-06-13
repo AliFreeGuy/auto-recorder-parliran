@@ -55,7 +55,7 @@ async def date_time_now(bot , call ):
 
 async def reload_recorder(bot , call ):
     await recorder_manager(bot , call )
-    await alert(bot , call , message='لیست بروز رسانی شد')
+    await bot.answer_callback_query(call.id, text='لیست بروز رسانی شد')
 
 
 
