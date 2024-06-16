@@ -8,11 +8,12 @@ from os.path import abspath, dirname
 import sys
 from datetime import datetime , timezone
 import time
+import subprocess
 
 parent_dir = dirname(dirname(abspath(__file__)))
 sys.path.insert(0, parent_dir)
 
-from config import REDIS_DB , REDIS_HOST ,  REDIS_PORT 
+from config import REDIS_DB , REDIS_HOST ,  REDIS_PORT  , STREAM_URL
 from utils import cache
 
 
@@ -56,13 +57,68 @@ def checker():
 
 
 
+
+
 @app.task(name='tasks.recorder_task', bind=True, default_retry_delay=1)
 def recorder_task(self, recorder):
+    max_retries = 10
+    retries = 0
+
+    while retries < max_retries:
+        try:
+            # Run ffmpeg to download stream
+            command = [
+                'ffmpeg',
+                '-i', STREAM_URL,  # Use the stream URL from the recorder
+                '-c', 'copy',  # Copy the stream without re-encoding
+                'outbot.mp4'
+            ]
+            subprocess.run(command, check=True)
+            
+            # If successful, update status and exit loop
+            cache.update_recorder(id=recorder['id'], key='status', val='2')
+            print(f"Recording started for recorder: {recorder['id']}")
+            break
+        except subprocess.CalledProcessError:
+            retries += 1
+            time.sleep(10)  # Wait before retrying
+            print(f"Retrying {retries}/{max_retries} for recorder: {recorder['id']}")
+
+    if retries == max_retries:
+        print(f"Failed to record for recorder: {recorder['id']} after {max_retries} attempts")
 
 
-    time.sleep(30)
-    cache.update_recorder(id=recorder['id'] , key='status' , val='2')
-    print(f"Recording started for recorder: {recorder['id']}")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# @app.task(name='tasks.recorder_task', bind=True, default_retry_delay=1)
+# def recorder_task(self, recorder):
+
+
+#     time.sleep(30)
+#     cache.update_recorder(id=recorder['id'] , key='status' , val='2')
+#     print(f"Recording started for recorder: {recorder['id']}")
 
 
 

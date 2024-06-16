@@ -5233,3 +5233,470 @@ TypeError: alert() got an unexpected keyword argument 'msg'
 [1;92mINFO [2024-06-13 07:24:51 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-06-13 07:24:51 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-06-13 07:24:51 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-13 07:30:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-13 07:30:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-13 07:30:23 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-13 07:30:24 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-13 07:30:24 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-13 07:30:24 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-13 07:30:24 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-13 07:30:24 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-13 07:30:24 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-13 07:30:24 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-13 07:30:24 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-13 07:30:24 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-13 07:30:24 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-13 07:30:24 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-13 07:30:24 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-13 07:30:37 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:38 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:38 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:41 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:41 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:45 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:45 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:47 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:30:47 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:04 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:04 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:06 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:06 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:30 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:30 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:56 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:56 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:58 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:31:58 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:00 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:00 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:03 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:03 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:04 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:04 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:06 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:06 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:08 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:08 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:13 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:13 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:16 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:16 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:18 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:18 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:20 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:20 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:23 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:23 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:26 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:26 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:43 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:43 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:59 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:32:59 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:01 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:01 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:04 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:04 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:07 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:07 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:11 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:11 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:14 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:14 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:17 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:17 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:21 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:21 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:24 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:24 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:29 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:33:29 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:04 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:04 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:06 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:06 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:08 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:08 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:10 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:10 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:12 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:12 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:14 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:14 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:16 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:16 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:23 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:23 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:28 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:28 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:34 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:34 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:36 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:34:36 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:06 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:06 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:20 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:20 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:26 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:26 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:34 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:34 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:38 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:38 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:39 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:39 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:46 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:46 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:51 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:51 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:53 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:53 - record_manager.py:14] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:55 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:55 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:58 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:35:58 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:00 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:00 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:08 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:08 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:11 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:11 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:13 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:13 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:15 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:15 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:21 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:21 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:23 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:23 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:25 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:25 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:27 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:27 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:35 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 07:36:35 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-13 07:38:43 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-13 07:38:44 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-13 07:38:44 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-13 07:38:44 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-13 07:38:44 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-13 07:38:44 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-13 11:13:33 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-13 11:13:33 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-13 11:13:33 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-13 11:13:33 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-13 11:13:34 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-13 11:13:34 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-13 11:13:34 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-13 11:13:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-13 11:13:35 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-13 11:13:35 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-13 11:13:35 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-13 11:13:35 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-13 11:13:35 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-13 11:13:35 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-13 11:13:36 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-13 11:13:37 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-13 11:13:37 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-13 11:13:37 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-13 11:13:37 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-13 11:13:38 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-13 11:13:38 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-13 11:13:38 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-13 11:13:38 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-13 11:13:38 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-13 11:13:38 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-13 11:13:38 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-13 11:13:39 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-13 11:13:39 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-13 11:13:39 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-13 11:13:39 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-13 11:13:39 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-13 11:13:39 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-13 11:14:04 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:38 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:38 - record_manager.py:14] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:39 - admin_manager.py:12] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:43 - record_manager.py:14] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:49 - admin_manager.py:12] - callback data : manager:remove_admin:333333333333  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:49 - record_manager.py:14] - callback data : manager:remove_admin:333333333333  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:50 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:50 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:51 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:51 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:56 - admin_manager.py:12] - callback data : manager:recorder:rm_42  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:56 - record_manager.py:14] - callback data : manager:recorder:rm_42  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:59 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:16:59 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:17:02 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:17:02 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;92mINFO [2024-06-13 11:17:05 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-13 11:17:29 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:39 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:40 - record_manager.py:14] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:41 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:41 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:42 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:42 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:51 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:51 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:58 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:20:58 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:21:01 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:21:02 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:21:03 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:21:03 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:22:47 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:22:47 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:04 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:04 - record_manager.py:14] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:06 - admin_manager.py:12] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:09 - record_manager.py:14] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:11 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:11 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:14 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:14 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:33 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:23:33 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:26 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:26 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:34 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:34 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:39 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:39 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:48 - admin_manager.py:12] - callback data : manager:recorder:rm_43  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:48 - record_manager.py:14] - callback data : manager:recorder:rm_43  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:51 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-13 11:24:51 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-15 07:44:02 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-15 07:44:02 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:02 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-15 07:44:02 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-15 07:44:03 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:03 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-15 07:44:03 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-15 07:44:04 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:04 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-15 07:44:04 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-06-15 07:44:05 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-15 07:44:05 - auth.py:269] - Retrying due to ConnectionError: [0m
+[1;92mINFO [2024-06-15 07:44:06 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-15 07:44:06 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-15 07:44:06 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:06 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-15 07:44:06 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-15 07:44:07 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:07 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-15 07:44:07 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-15 07:44:08 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:08 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-15 07:44:08 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-15 07:44:10 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-15 07:44:10 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-15 07:44:10 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:10 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-15 07:44:10 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-15 07:44:10 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-15 07:44:11 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-15 07:44:11 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-15 07:44:11 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-15 07:44:11 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:11 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-15 07:44:11 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-15 07:44:15 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-15 07:44:15 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-15 07:44:15 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 07:44:15 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-15 07:44:16 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-15 07:44:16 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-15 07:44:20 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-15 07:44:20 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-15 07:44:20 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-15 07:44:20 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-15 07:44:20 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-15 07:44:28 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-15 07:44:28 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-15 07:44:28 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-15 07:44:28 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-15 07:44:28 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-15 07:44:28 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-15 07:44:28 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-15 07:44:32 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:44:37 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:44:37 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:44:44 - admin_manager.py:12] - callback data : manager:recorder:rm_44  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:44:44 - record_manager.py:14] - callback data : manager:recorder:rm_44  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:44:50 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:44:50 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:45:03 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:45:03 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:45:46 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:45:46 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:46:10 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:46:10 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:46:19 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:46:19 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:48 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:48 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:51 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:51 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:56 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:56 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:59 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:47:59 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:01 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:01 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:02 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:02 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:33 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:33 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:35 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:35 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:38 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:38 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:40 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:40 - record_manager.py:14] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:42 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:42 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:43 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:43 - record_manager.py:14] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:44 - admin_manager.py:12] - callback data : manager:remove_admin:3333333333333  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:44 - record_manager.py:14] - callback data : manager:remove_admin:3333333333333  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:45 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:45 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:47 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:47 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:49 - admin_manager.py:12] - callback data : manager:recorder:rm_45  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:49 - record_manager.py:14] - callback data : manager:recorder:rm_45  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:51 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 07:48:51 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-15 07:52:33 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-15 07:52:36 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-15 07:52:36 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-15 07:52:36 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-15 07:52:36 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-15 07:52:36 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-15 08:04:21 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-15 08:04:21 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-15 08:04:21 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-15 08:04:21 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-15 08:04:21 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-15 08:04:21 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-15 08:04:21 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-15 08:04:21 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-15 08:04:21 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-15 08:04:22 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-15 08:04:22 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-15 08:04:22 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-15 08:04:22 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-15 08:04:22 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-15 08:04:22 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-15 08:04:30 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:30 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:36 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:36 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:52 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:52 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:57 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:57 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:59 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:04:59 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:11 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:11 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:12 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:12 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:14 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:14 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:18 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:18 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:24 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:24 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:53 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:05:53 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:06:07 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:06:07 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:34 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:34 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:39 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:39 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:42 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:42 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:47 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:47 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:50 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:50 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:51 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:51 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:56 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:07:56 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:39 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:39 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:42 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:42 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:44 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:44 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:45 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:08:45 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:28 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:28 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:30 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:30 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:34 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:34 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:51 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:51 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:58 - admin_manager.py:12] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:11:58 - record_manager.py:14] - callback data : manager:recorder:set_recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:13 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:13 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:18 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:18 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:21 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:21 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:24 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:24 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:27 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:27 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:29 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:12:29 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:02 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:02 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:12 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:12 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:14 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:14 - record_manager.py:14] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:16 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:16 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:18 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:18 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:20 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:20 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:22 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:22 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:23 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:23 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:31 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:31 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:33 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-15 08:13:33 - record_manager.py:14] - callback data : manager:back  - user : 5522477996[0m
+[1;92mINFO [2024-06-15 08:13:42 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-15 08:13:42 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-15 08:13:42 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-15 08:13:42 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-15 08:13:42 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-15 08:13:42 - session.py:180] - Session stopped[0m
