@@ -54,10 +54,12 @@ def recorder_lists():
     sorted_data = sorted(data, key=lambda x: int(x['id']), reverse=True)
 
     for item in sorted_data:
+        print(sorted_data)
         item['start_time'] = datetime.utcfromtimestamp(int(item['start_time'])).strftime('%Y-%m-%d %H:%M')
         item['end_time'] = datetime.utcfromtimestamp(int(item['end_time'])).strftime('%Y-%m-%d %H:%M')
 
     for item in sorted_data:
+        print(item['id'])
         not_start  = '🟡'
         ok = '🟢'
         started = '🔴'

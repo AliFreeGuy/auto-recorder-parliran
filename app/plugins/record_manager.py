@@ -5,7 +5,7 @@ from config import ADMIN
 from pyromod import listen
 from datetime import datetime
 from datetime import datetime , timezone
-
+from celery.result import AsyncResult
 
 
 
@@ -61,6 +61,9 @@ async def reload_recorder(bot , call ):
 
 async def remove_recorder(bot , call ):
     recorder_key = call.data.split(':')[2].split('_')[1]
+    
+    # remove_task = AsyncResult()
+    cache.redis.set(f'remove_task:{recorder_key}' , recorder_key)
     cache.redis.delete(f'recorder:{recorder_key}')
     await recorder_manager(bot , call )
 

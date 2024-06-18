@@ -5,10 +5,16 @@ from celery.schedules import crontab
 import redis
 from os import environ as env
 from os.path import abspath, dirname
+import os
 import sys
 from datetime import datetime , timezone
 import time
+from celery.result import AsyncResult
 import subprocess
+from celery import current_app
+from celery.result import AsyncResult
+
+
 
 parent_dir = dirname(dirname(abspath(__file__)))
 sys.path.insert(0, parent_dir)
@@ -22,7 +28,7 @@ from utils import cache
 # REDIS_DB= env.get('REDIS_DB')
 
 r = redis.Redis(host=REDIS_HOST , port=REDIS_PORT , db=REDIS_DB , decode_responses=True)
-app = Celery('tasks', broker='redis://localhost:6379/0')
+app = Celery('tasks', broker='redis://localhost:6379/0'  , backend='redis://localhost:6379/0')
 app.conf.timezone = 'UTC'
 app.conf.update(
     task_serializer='json',
@@ -52,7 +58,8 @@ def checker():
         start_time = int(recorder['start_time'])
         if start_time <= now and recorder['status'] == '0':
             cache.update_recorder(id = recorder['id'] , key='status' , val='1') 
-            recorder_task.delay(recorder) 
+            recorder_data = recorder_task.delay(recorder)
+            print(recorder_task)
 
 
 
@@ -61,37 +68,75 @@ def checker():
 
 @app.task(name='tasks.recorder_task', bind=True, default_retry_delay=1)
 def recorder_task(self, recorder):
-    max_retries = 10
+    def remove_checker():
+        if cache.redis.exists(f'remove_task:{recorder["id"]}'):
+            print('Hi user, task will be forcefully terminated.')
+            current_task = AsyncResult(self.request.id, app=current_app)
+            current_task.revoke(terminate=True)
+            print('========================== Task removed ==========================')
+    
+
+    max_retries = 3
     retries = 0
 
-    while retries < max_retries:
+    remove_checker()
+
+    
+    cache.update_recorder(id=recorder['id'], key='task_id', val=self.request.id)
+    while True:
+        remove_checker()
         try:
-            # Run ffmpeg to download stream
+            remove_checker()
             command = [
                 'ffmpeg',
-                '-i', STREAM_URL,  # Use the stream URL from the recorder
-                '-c', 'copy',  # Copy the stream without re-encoding
-                'outbot.mp4'
+                '-y',
+                '-i', STREAM_URL,
+                '-c:v', 'libx265',
+                '-crf', '35',
+                '-preset', 'medium',
+                '-c:a', 'aac',
+                '-b:a', '64k',
+                '-f', 'mpegts',
+                f'{self.request.id}.mp4'
             ]
+            remove_checker()
+            recording_file = os.path.join(os.getcwd(), f'{self.request.id}.mp4')
+            cache.update_recorder(recorder['id'] , key='file_path' ,val=recording_file)
+            print(f"Recording saved as: {recording_file}")
             subprocess.run(command, check=True)
             
-            # If successful, update status and exit loop
-            cache.update_recorder(id=recorder['id'], key='status', val='2')
-            print(f"Recording started for recorder: {recorder['id']}")
-            break
         except subprocess.CalledProcessError:
+            remove_checker()
             retries += 1
-            time.sleep(10)  # Wait before retrying
-            print(f"Retrying {retries}/{max_retries} for recorder: {recorder['id']}")
+            print(f"Retrying attempt {retries}.")
+            if retries == max_retries:
+                
+                remove_checker()
+                print(f"Failed to record after {max_retries} attempts.")
+                cache.update_recorder(id=recorder['id'], key='status', val='2')
+                break
+            time.sleep(10)
+        except KeyboardInterrupt:
+            remove_checker()
+            print("\nRecording interrupted by user.")
+            cache.update_recorder(id=recorder['id'], key='status', val='2')
+            break
+        except Exception as e:
+            remove_checker()
+            print(f"An error occurred: {str(e)}")
+            cache.update_recorder(id=recorder['id'], key='status', val='2')
+            break
+        else:
+            remove_checker()
+            print("Recording completed successfully.")
+            cache.update_recorder(id=recorder['id'], key='status', val='2')
+            break
 
-    if retries == max_retries:
-        print(f"Failed to record for recorder: {recorder['id']} after {max_retries} attempts")
 
 
 
 
-
-
+            
 
 
 
