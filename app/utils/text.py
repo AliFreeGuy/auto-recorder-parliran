@@ -40,4 +40,8 @@ def recorder_manager() :
 
 -
 '''
-    return text
+
+    auto_recorder_text = '''
+آرشیو نشست های مجلس شورای اسلامی
+برای دریافت هر قسمت بر روی ان بزنید :'''
+    return auto_recorder_text

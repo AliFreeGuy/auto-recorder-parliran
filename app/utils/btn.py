@@ -45,7 +45,7 @@ def recorder_lists():
         
         InlineKeyboardButton(text='⏰',callback_data='manager:recorder:datetimenow'),
 
-        InlineKeyboardButton(text='➕',callback_data=f'manager:recorder:set_recorder') ,
+        # InlineKeyboardButton(text='➕',callback_data=f'manager:recorder:set_recorder') ,
 
     ]
     buttons.append(start_end_time)
@@ -54,20 +54,8 @@ def recorder_lists():
     sorted_data = sorted(data, key=lambda x: int(x['id']), reverse=True)
 
     for item in sorted_data:
-        print(sorted_data)
-        item['start_time'] = datetime.utcfromtimestamp(int(item['start_time'])).strftime('%Y-%m-%d %H:%M')
-        item['end_time'] = datetime.utcfromtimestamp(int(item['end_time'])).strftime('%Y-%m-%d %H:%M')
-
-    for item in sorted_data:
-        print(item['id'])
-        not_start  = '🟡'
-        ok = '🟢'
-        started = '🔴'
-        if item['status'] == '0' :recorder_status = not_start
-        elif item['status'] == '1' : recorder_status = started
-        elif item['status']  == '2' : recorder_status = ok
-        recorder_text =f'{recorder_status} {item["start_time"]} {item["end_time"].split(" ")[1]}'
-        buttons.append([ InlineKeyboardButton(text =recorder_text,callback_data=f'manager:recorder:rm_{item["id"]}'),])
+        recorder_text =f'{item["date"]} {item["start_time"]} {item["end_time"]}'
+        buttons.append([ InlineKeyboardButton(text =recorder_text,callback_data=f'manager:recorder:get_{item["id"]}'),])
 
 
 

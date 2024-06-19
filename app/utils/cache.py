@@ -32,18 +32,16 @@ class CacheService:
     def delete_data(self, key):
         self.redis.delete(key)
 
-    def create_recorder(self, user, start_time, end_time, status, file_path, file_id, file_size, task_id):
+    def create_recorder(self,date , start_time, end_time, file_path, file_id, task_id):
         # Generate a new ID based on the current number of recorders
         recorder_id = self.redis.incr("recorder_id_counter")
         recorder = {
             "id": str(recorder_id),
-            "user": str(user),
+            'date' : str(date),
             "start_time": str(start_time),
             "end_time": str(end_time),
-            "status": str(status),
             "file_path": str(file_path),
             "file_id": str(file_id),
-            "file_size": str(file_size),
             "task_id": str(task_id)
         }
 

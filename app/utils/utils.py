@@ -4,7 +4,8 @@ from . import text
 import random
 import re
 from datetime import datetime, timezone
-
+import pytz 
+import jdatetime
 
 
 def parse_date(data):
@@ -53,6 +54,18 @@ def parse_date(data):
     
 
 
+
+
+def jalalidate():
+    now_utc = datetime.now(timezone.utc)
+    tehran_tz = pytz.timezone('Asia/Tehran')
+    now_tehran = now_utc.astimezone(tehran_tz)
+    jalali_date = jdatetime.datetime.fromgregorian(datetime=now_tehran)
+    time_jalali = jalali_date.strftime("%H:%M")
+    date_jalali = jalali_date.strftime("%Y/%m/%d")
+    data = {'jdate' : date_jalali , 'jtime'  : time_jalali}
+    return data
+    
 
 # def parde_date(data):
 #     pattern = r'^(\d{2}:\d{2}) (\d{2}:\d{2}) (\d{4}:\d{2}:\d{2})$'

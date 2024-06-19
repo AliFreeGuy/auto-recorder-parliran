@@ -6,7 +6,9 @@ from pyromod import listen
 from datetime import datetime
 from datetime import datetime , timezone
 from celery.result import AsyncResult
-
+from datetime import datetime, timezone
+import jdatetime
+import pytz
 
 
 @Client.on_callback_query(f.is_admin , group=1)
@@ -27,8 +29,8 @@ async def admin_manager_handler(bot , call ):
         elif status == 'datetimenow' :
             await date_time_now(bot , call )
 
-        elif status.startswith('rm'):
-             await remove_recorder(bot , call )
+        elif status.startswith('get'):
+             await get_recorder(bot , call )
         
         
             
@@ -46,10 +48,15 @@ async def admin_manager_handler(bot , call ):
     
 
 
-async def date_time_now(bot , call ):
+async def date_time_now(bot, call):
     now_utc = datetime.now(timezone.utc)
-    formatted_time = now_utc.strftime("%Y:%m:%d %H:%M")
-    await alert(bot , call , message =f'UTC TIME NOW : {formatted_time}')
+    formatted_time = now_utc.strftime("%Y/%m/%d %H:%M")
+    tehran_tz = pytz.timezone('Asia/Tehran')
+    now_tehran = now_utc.astimezone(tehran_tz)
+    jalali_date = jdatetime.datetime.fromgregorian(datetime=now_tehran)
+    formatted_jalali_date = jalali_date.strftime("%Y/%m/%d %H:%M")
+    await alert(bot, call, message=f'UTC : {formatted_time}\nTEH : {formatted_jalali_date}')
+
 
 
 
@@ -59,12 +66,16 @@ async def reload_recorder(bot , call ):
 
 
 
-async def remove_recorder(bot , call ):
-    recorder_key = call.data.split(':')[2].split('_')[1]
-    
-    # remove_task = AsyncResult()
-    cache.redis.set(f'remove_task:{recorder_key}' , recorder_key)
-    cache.redis.delete(f'recorder:{recorder_key}')
+async def get_recorder(bot , call ):
+    recorder_id= call.data.split(':')[2].replace('get_' , '')
+    recorder_key = f'recorder:{recorder_id}'
+    recorder = cache.redis.hgetall(recorder_key)
+    logger.warning(cache.redis.hgetall(recorder_key))
+    if recorder and recorder['file_id'] != 'none' :
+        caption = f'ضبط صحن علنی مجلس : {str(recorder["date"])}\nساعت شروع : {str(recorder["start_time"])}\nساعت پایان : {str(recorder["end_time"])}'
+        await bot.send_video(chat_id = call.from_user.id, video = recorder['file_id'] , caption = caption)
+    else :
+        await alert(bot , call , message='فایلی ذخیره نشده هنوز !')
     await recorder_manager(bot , call )
 
 

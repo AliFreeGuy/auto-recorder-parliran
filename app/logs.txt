@@ -7326,3 +7326,1277 @@ kombu.exceptions.OperationalError: [Errno 111] Connection refused
 [1;92mINFO [2024-06-19 07:15:40 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-06-19 07:15:40 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-06-19 07:15:40 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:16:20 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:16:20 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:16:20 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:16:20 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:16:21 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:16:21 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:16:21 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:16:21 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:16:21 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:16:21 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:16:21 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:16:21 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:16:21 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:16:21 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:16:21 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:16:22 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:16:24 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:16:24 - record_manager.py:14] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:16:26 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:16:26 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:16:30 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:16:30 - record_manager.py:14] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:16:43 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:16:46 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:16:46 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:16:46 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:16:46 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:16:46 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:19:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:19:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:19:57 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:19:57 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:19:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:19:58 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:19:58 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:19:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:19:58 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:19:58 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:19:58 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:19:58 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:19:58 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:19:58 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:19:58 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 07:20:01 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:20:01 - record_manager.py:15] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:20:04 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:20:04 - record_manager.py:15] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:20:48 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:20:53 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:20:53 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:20:53 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:20:53 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:20:53 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:21:02 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:21:02 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:21:03 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:21:03 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:21:03 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:21:03 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:21:03 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:21:03 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:21:03 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:21:04 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:21:04 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:21:04 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:21:04 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:21:04 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:21:04 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 07:21:06 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:21:06 - record_manager.py:15] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:21:17 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:21:18 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:21:18 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:21:18 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:21:18 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:21:18 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:21:27 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:21:27 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:21:27 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:21:27 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:21:28 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:21:28 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:21:28 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:21:28 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:21:28 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:21:28 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:21:28 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:21:28 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:21:28 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:21:28 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:21:28 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 07:21:30 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:21:30 - record_manager.py:15] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:22:40 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:22:43 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:22:43 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:22:43 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:22:43 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:22:43 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:23:32 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:23:32 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:23:32 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:23:32 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:23:32 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:23:32 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:23:32 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:23:32 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:23:32 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:23:33 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:23:33 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:23:33 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:23:33 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:23:33 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:23:33 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 07:23:35 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:23:35 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:24:04 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:24:07 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:24:07 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:24:07 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:24:07 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:24:07 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:24:09 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:24:09 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:24:09 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:24:09 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:24:09 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:24:09 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:24:09 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:24:09 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:24:09 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:24:10 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:24:10 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:24:10 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:24:10 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:24:10 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:24:10 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 07:24:11 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:11 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:18 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:18 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:22 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:22 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:23 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:24:23 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:25:35 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:25:39 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:25:39 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:25:39 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:25:39 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:25:39 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:25:41 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:25:41 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:25:41 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:25:41 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:25:41 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:25:41 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:25:41 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:25:41 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:25:41 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:25:42 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:25:42 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:25:42 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:25:42 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:25:42 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:25:42 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:25:43 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:25:45 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:25:45 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:26:33 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:26:37 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:26:37 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:26:37 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:26:37 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:26:37 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:26:38 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:26:38 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:26:38 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:26:38 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:26:39 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:26:39 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:26:39 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:26:39 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:26:39 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:26:39 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:26:39 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:26:39 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:26:39 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:26:39 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:26:39 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:26:39 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:42 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:42 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:48 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:48 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:52 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:52 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:54 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:26:54 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:27:03 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:27:04 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:27:04 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:27:04 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:27:04 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:27:04 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:27:05 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:27:05 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:27:05 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:27:05 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:27:06 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:27:06 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:27:06 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:27:06 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:27:06 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:27:06 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:27:06 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:27:06 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:27:06 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:27:06 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:27:06 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:27:06 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:08 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:08 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:10 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:10 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:18 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:18 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:19 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:19 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:43 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:27:43 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:35:37 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:35:41 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:35:41 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:35:41 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:35:41 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:35:41 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:35:43 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:35:43 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:35:43 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:35:43 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:35:44 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:35:44 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:35:44 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:35:44 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:35:44 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:35:45 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:35:45 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:35:45 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:35:45 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:35:45 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:35:45 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 07:35:49 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:49 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:50 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:50 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:52 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:52 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:53 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:53 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:54 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:35:54 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:36:03 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:36:03 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:39:01 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 07:39:04 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:39:04 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:39:04 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:39:04 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:39:04 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:39:31 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:39:31 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:39:31 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:39:31 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:39:32 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:39:32 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:39:32 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:39:32 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:39:32 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:39:33 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 07:39:33 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 07:39:33 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:39:33 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 07:39:33 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 07:39:33 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 07:39:34 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:39:36 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:39:36 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:39:37 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:39:37 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:39:40 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 07:39:40 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 07:46:48 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:46:48 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:46:48 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:46:48 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:46:48 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:46:48 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:46:56 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:46:56 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:46:58 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:46:58 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:46:58 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:46:58 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:46:58 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:47:03 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:47:03 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:47:03 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:47:03 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:47:03 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:47:03 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:47:03 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 07:50:29 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 07:50:29 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 07:50:29 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 07:50:29 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 07:50:29 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 07:50:29 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 07:50:32 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 07:50:32 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 07:50:33 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 07:50:33 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 07:50:33 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 07:50:33 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 07:50:33 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-19 08:22:58 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:22:58 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:22:59 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:22:59 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 08:25:18 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 08:25:20 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 08:25:20 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 08:25:20 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:25:20 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 08:25:20 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:25:21 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:25:21 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:25:21 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:25:21 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:25:22 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 08:25:22 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 08:25:22 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 08:25:22 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 08:25:22 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 08:25:40 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:25:40 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:25:40 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:25:40 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:25:41 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 08:25:41 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 08:25:41 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 08:25:41 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 08:25:41 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 08:25:41 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 08:25:41 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 08:25:41 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 08:25:41 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 08:25:41 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 08:25:41 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 08:25:43 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:25:43 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:25:47 - admin_manager.py:12] - callback data : manager:recorder:get_24  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:25:47 - record_manager.py:16] - callback data : manager:recorder:get_24  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 08:26:10 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 08:26:11 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 08:26:11 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 08:26:11 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:26:11 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 08:26:11 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:26:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:26:12 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:26:13 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:26:13 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:26:13 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 08:26:13 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 08:26:13 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 08:26:13 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 08:26:13 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 08:26:14 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 08:26:14 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 08:26:14 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 08:26:14 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 08:26:14 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 08:26:14 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 08:26:15 - admin_manager.py:12] - callback data : manager:recorder:get_24  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:26:15 - record_manager.py:16] - callback data : manager:recorder:get_24  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:27:26 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:27:26 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:27:27 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:27:27 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:28:05 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:28:05 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:28:06 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:28:06 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:34:40 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:34:40 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:34:41 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:34:41 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:34:46 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:34:46 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 08:38:59 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 08:38:59 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 08:38:59 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:38:59 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:38:59 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:38:59 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 08:39:09 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 08:39:10 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:39:10 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 08:39:20 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 08:39:21 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:39:21 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 08:39:31 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;93mWARNING [2024-06-19 08:39:32 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-19 08:39:32 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:39:32 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:39:32 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:39:32 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:39:38 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:39:38 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:39:40 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:39:40 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 08:39:40 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:39:40 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:39:40 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:39:49 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:39:49 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:39:50 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 08:39:50 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 08:39:50 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 08:39:50 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 08:39:50 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 08:40:22 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 08:40:25 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 08:40:25 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 08:40:25 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:40:25 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 08:40:25 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:42:36 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:42:36 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:42:36 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:42:36 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:42:36 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 08:42:36 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 08:42:36 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 08:42:36 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 08:42:36 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 08:42:37 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 08:42:37 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 08:42:37 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 08:42:37 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 08:42:37 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 08:42:37 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 08:42:37 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:39 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:39 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:42 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:42 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:43 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:43 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:50 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:50 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:52 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:52 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:53 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:53 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:57 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:57 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:59 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:42:59 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:43:00 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:43:00 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:43:02 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:43:02 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:43:03 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:43:03 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 08:43:16 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 08:43:16 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 08:43:16 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 08:43:16 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 08:43:16 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:43:16 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 08:43:26 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 08:43:27 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 08:43:27 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 08:43:28 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 08:43:28 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 08:43:28 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 08:43:28 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 08:43:28 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 08:43:28 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 08:43:28 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-19 08:44:39 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:39 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:41 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:41 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:45 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:45 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:49 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:49 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:50 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 08:44:50 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 09:07:57 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:07:57 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:07:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:07:57 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:07:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:07:57 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:08:07 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:08:08 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:08:08 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:08:11 - connection.py:50] - Unable to connect due to network issues: Socket error: Connection closed unexpectedly[0m
+[1;92mINFO [2024-06-19 09:08:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:08:12 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:08:12 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;93mWARNING [2024-06-19 09:08:13 - connection.py:61] - Connection failed! Trying again...[0m
+[1;92mINFO [2024-06-19 09:08:13 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:08:13 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:08:13 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:08:13 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:08:13 - connection.py:50] - Unable to connect due to network issues: Error connecting to SOCKS5 proxy 127.0.0.1:1080: [Errno 111] Connection refused[0m
+[1;92mINFO [2024-06-19 09:08:14 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:08:14 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:08:14 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:08:14 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:08:14 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:08:14 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:08:14 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:08:14 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:08:14 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:12:53 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 09:12:55 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 09:12:55 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:12:55 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:12:55 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:12:55 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:12:56 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:12:56 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:12:56 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:12:56 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:13:00 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:13:00 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:13:00 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:13:00 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:13:00 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:13:03 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 09:13:03 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 09:13:03 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:13:03 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:13:03 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 09:13:03 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 09:13:04 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:04 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:05 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:05 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:09 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:09 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:10 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:10 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:33 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:13:33 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:14:56 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:14:56 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:14:57 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:14:57 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:15:18 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:15:18 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:15:20 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:15:20 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:15:25 - admin_manager.py:12] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:15:25 - record_manager.py:16] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 09:16:12 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 09:16:15 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 09:16:15 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:16:15 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:16:15 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:16:15 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:16:17 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:16:17 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:16:17 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:16:17 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:16:18 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:16:18 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:16:18 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:16:18 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:16:18 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:16:18 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 09:16:18 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 09:16:18 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:16:18 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:16:18 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 09:16:18 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 09:16:19 - admin_manager.py:12] - callback data : manager:recorder:get_4  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:16:19 - record_manager.py:16] - callback data : manager:recorder:get_4  - user : 5522477996[0m
+[1;91mERROR [2024-06-19 09:16:19 - dispatcher.py:253] - replace expected at least 2 arguments, got 1[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/callback_query_handler.py", line 146, in resolve_future_or_callback
+    await self.original_callback(client, query, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/record_manager.py", line 33, in admin_manager_handler
+    await remove_recorder(bot , call )
+  File "/home/freeguy/Desktop/project/majles/app/plugins/record_manager.py", line 70, in remove_recorder
+    recorder_key = call.data.split(':')[2].replace('get_')
+TypeError: replace expected at least 2 arguments, got 1
+[1;92mINFO [2024-06-19 09:16:55 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 09:16:58 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 09:16:58 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:16:58 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:16:58 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:16:58 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:17:04 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:17:04 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:17:05 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:17:05 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:17:05 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:17:05 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:17:05 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:17:05 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:17:05 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:17:06 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 09:17:06 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 09:17:06 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:17:06 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:17:06 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 09:17:06 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 09:17:06 - admin_manager.py:12] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:17:06 - record_manager.py:16] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 09:17:38 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 09:17:40 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 09:17:40 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:17:40 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:17:40 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:17:40 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:17:42 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:17:42 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:17:42 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:17:42 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:17:43 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:17:43 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:17:43 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:17:43 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:17:43 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:17:44 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 09:17:44 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 09:17:44 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:17:44 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:17:44 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 09:17:44 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-19 09:17:46 - admin_manager.py:12] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:17:46 - record_manager.py:16] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 09:21:32 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 09:21:33 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 09:21:33 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:21:33 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:21:33 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:21:33 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:21:37 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:21:37 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:21:37 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:21:37 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:21:38 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:21:38 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:21:38 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:21:38 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:21:38 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:21:38 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 09:21:39 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 09:21:39 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:21:39 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 09:21:39 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 09:21:39 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 09:29:39 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:29:39 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:29:39 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:29:39 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:29:39 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:29:39 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:29:45 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:29:45 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:29:47 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:29:47 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:29:47 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:29:47 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:29:47 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:30:02 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:30:02 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:30:02 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:30:02 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:30:02 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:30:02 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:30:07 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:30:07 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:30:09 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:30:09 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:30:09 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:30:09 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:30:09 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:30:17 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:30:17 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:30:17 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:30:17 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:30:17 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:30:17 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:30:17 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:30:39 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:30:39 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:30:39 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:30:39 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:30:39 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:30:39 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:30:49 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:30:50 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:30:50 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:30:58 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:30:58 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:30:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:30:58 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:30:58 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:30:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:30:58 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:31:14 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:31:14 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:31:14 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:31:14 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:31:14 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:31:14 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:31:21 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:31:21 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:31:23 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:31:23 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:31:23 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:31:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:31:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:31:29 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:31:29 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:31:31 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:31:31 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:31:31 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:31:31 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:31:31 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:31:33 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:31:33 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:31:34 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:31:34 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:31:34 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:31:34 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:31:34 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:35:31 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:35:31 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:35:31 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:35:31 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:35:31 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:35:31 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:35:36 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:35:36 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:35:38 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:35:38 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:35:38 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:35:38 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:35:38 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:35:39 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:35:39 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:35:40 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:35:40 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:35:40 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:35:40 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:35:40 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:36:40 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:36:40 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:36:40 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:36:40 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:36:40 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:36:40 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:36:50 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:36:51 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:36:51 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:36:54 - session.py:404] - [1] Retrying "updates.GetState" due to: Request timed out[0m
+[1;93mWARNING [2024-06-19 09:37:01 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:37:02 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:37:02 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:37:10 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:37:10 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:37:12 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:37:12 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:37:12 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:37:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:37:12 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:37:22 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:37:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:37:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:37:24 - session.py:404] - [2] Retrying "updates.GetState" due to: Request timed out[0m
+[1;93mWARNING [2024-06-19 09:37:33 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:37:34 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:37:34 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:37:40 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:37:40 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:37:41 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:37:41 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:37:41 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:37:41 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:37:41 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:46:23 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:46:23 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:46:23 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:46:23 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:46:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:46:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:46:32 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:46:32 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:46:33 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:46:33 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:46:33 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:46:33 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:46:33 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:47:31 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:47:31 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:47:31 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:47:31 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:47:31 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:47:31 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 09:47:41 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 09:47:42 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:47:42 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:47:43 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:47:43 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:47:44 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:47:44 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:47:44 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:47:44 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:47:44 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 09:51:50 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:51:50 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:51:50 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:51:50 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:51:50 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:51:50 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 09:51:54 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 09:51:54 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 09:51:56 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 09:51:56 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 09:51:56 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 09:51:56 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 09:51:56 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-19 09:56:37 - admin_manager.py:12] - callback data : manager:recorder:get_4  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:56:37 - record_manager.py:16] - callback data : manager:recorder:get_4  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:56:37 - record_manager.py:72] - {'file_id': 'none', 'date': '1403/03/30', 'id': '4', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/e70c6aa1-ad92-42b6-9248-64e6c30ed923.mp4', 'task_id': 'e70c6aa1-ad92-42b6-9248-64e6c30ed923', 'start_time': '09:51', 'end_time': '09:53'}[0m
+[1;93mWARNING [2024-06-19 09:59:21 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 09:59:21 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 09:59:57 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 09:59:57 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 09:59:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 09:59:57 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 09:59:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 09:59:57 - connection.py:47] - Connecting...[0m
+[1;93mWARNING [2024-06-19 10:00:07 - connection.py:50] - Unable to connect due to network issues: Socket error: timed out[0m
+[1;92mINFO [2024-06-19 10:00:08 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 10:00:08 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 10:00:17 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 10:00:17 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 10:00:20 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 10:00:20 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 10:00:20 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 10:00:20 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 10:00:20 - session.py:272] - PingTask started[0m
+[1;93mWARNING [2024-06-19 10:01:49 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:01:49 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:02:41 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:02:42 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-19 10:03:50 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:03:52 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:03:52 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:06:53 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:06:53 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:06:58 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:06:58 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:01 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:01 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:04 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:04 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:07:21 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:07:21 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-19 10:07:30 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:30 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:31 - admin_manager.py:12] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:31 - record_manager.py:16] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:07:31 - record_manager.py:72] - {'file_id': 'BAACAgQAAxkDAAIDQmZyfKG9L6CCgAABG8SNz8FvrgpLNwACihMAAuxvmFOG1OtW1VwAASEeBA', 'date': '1403/03/30', 'id': '10', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/f464526e-25e0-4dd1-b55f-80ba66d3ad43.mp4', 'task_id': 'f464526e-25e0-4dd1-b55f-80ba66d3ad43', 'start_time': '10:06', 'end_time': '10:07'}[0m
+[1;92mINFO [2024-06-19 10:10:46 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 10:10:46 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 10:10:46 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 10:10:46 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 10:10:46 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 10:10:46 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 10:10:47 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 10:10:47 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 10:10:48 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 10:10:48 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 10:10:48 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 10:10:48 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 10:10:48 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 10:10:48 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 10:10:48 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 10:10:48 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 10:10:49 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 10:10:49 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 10:10:49 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 10:10:49 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 10:10:49 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 10:10:50 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:10:53 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:10:53 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:10:56 - admin_manager.py:12] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:10:56 - record_manager.py:16] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:10:56 - record_manager.py:73] - {'file_id': 'BAACAgQAAxkDAAIDQmZyfKG9L6CCgAABG8SNz8FvrgpLNwACihMAAuxvmFOG1OtW1VwAASEeBA', 'date': '1403/03/30', 'id': '10', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/f464526e-25e0-4dd1-b55f-80ba66d3ad43.mp4', 'task_id': 'f464526e-25e0-4dd1-b55f-80ba66d3ad43', 'start_time': '10:06', 'end_time': '10:07'}[0m
+[1;93mWARNING [2024-06-19 10:11:26 - admin_manager.py:12] - callback data : manager:recorder:get_9  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:11:26 - record_manager.py:16] - callback data : manager:recorder:get_9  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:11:26 - record_manager.py:73] - {'file_id': 'none', 'date': '1403/03/30', 'id': '9', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/5b4e10b0-5926-4093-bd55-0e42707b3ec5.mp4', 'task_id': '5b4e10b0-5926-4093-bd55-0e42707b3ec5', 'start_time': '10:01', 'end_time': '10:02'}[0m
+[1;93mWARNING [2024-06-19 10:11:30 - admin_manager.py:12] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:11:30 - record_manager.py:16] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:11:30 - record_manager.py:73] - {'file_id': 'BAACAgQAAxkDAAIDQmZyfKG9L6CCgAABG8SNz8FvrgpLNwACihMAAuxvmFOG1OtW1VwAASEeBA', 'date': '1403/03/30', 'id': '10', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/f464526e-25e0-4dd1-b55f-80ba66d3ad43.mp4', 'task_id': 'f464526e-25e0-4dd1-b55f-80ba66d3ad43', 'start_time': '10:06', 'end_time': '10:07'}[0m
+[1;92mINFO [2024-06-19 10:13:07 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:13:09 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:13:09 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:13:25 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:13:25 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:13:27 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:13:27 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:18:14 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:16 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:16 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:18 - admin_manager.py:12] - callback data : manager:recorder:get_6  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:18 - record_manager.py:16] - callback data : manager:recorder:get_6  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:18 - record_manager.py:73] - {'file_id': 'none', 'date': '1403/03/30', 'id': '6', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/52e2f201-51c7-4165-9a2f-78e0e7b11da9.mp4', 'task_id': '52e2f201-51c7-4165-9a2f-78e0e7b11da9', 'start_time': '09:54', 'end_time': '09:54'}[0m
+[1;93mWARNING [2024-06-19 10:18:24 - admin_manager.py:12] - callback data : manager:recorder:get_11  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:24 - record_manager.py:16] - callback data : manager:recorder:get_11  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:24 - record_manager.py:73] - {'file_id': 'none', 'date': '1403/03/30', 'id': '11', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/ae7def00-b4cd-427e-8402-cff2eb7472ab.mp4', 'task_id': 'ae7def00-b4cd-427e-8402-cff2eb7472ab', 'start_time': '10:13', 'end_time': '10:13'}[0m
+[1;93mWARNING [2024-06-19 10:18:32 - admin_manager.py:12] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:32 - record_manager.py:16] - callback data : manager:recorder:get_10  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:32 - record_manager.py:73] - {'file_id': 'BAACAgQAAxkDAAIDQmZyfKG9L6CCgAABG8SNz8FvrgpLNwACihMAAuxvmFOG1OtW1VwAASEeBA', 'date': '1403/03/30', 'id': '10', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/f464526e-25e0-4dd1-b55f-80ba66d3ad43.mp4', 'task_id': 'f464526e-25e0-4dd1-b55f-80ba66d3ad43', 'start_time': '10:06', 'end_time': '10:07'}[0m
+[1;93mWARNING [2024-06-19 10:18:41 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:18:41 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:19:49 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:19:51 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:19:51 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:03 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:03 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:05 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:05 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:26 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:26 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:32 - admin_manager.py:12] - callback data : manager:recorder:get_12  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:32 - record_manager.py:16] - callback data : manager:recorder:get_12  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:20:32 - record_manager.py:73] - {'file_id': 'none', 'date': '1403/03/30', 'id': '12', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/859746e3-536f-4148-9ceb-48a01aefe41d.mp4', 'task_id': '859746e3-536f-4148-9ceb-48a01aefe41d', 'start_time': '10:18', 'end_time': '10:19'}[0m
+[1;92mINFO [2024-06-19 10:21:43 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:21:44 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-19 10:21:44 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:21:44 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:21:56 - admin_manager.py:12] - callback data : manager:recorder:get_13  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:21:56 - record_manager.py:16] - callback data : manager:recorder:get_13  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:21:56 - record_manager.py:73] - {'file_id': 'none', 'date': '1403/03/30', 'id': '13', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/3e03a806-0605-4d94-b066-0454bafb2c81.mp4', 'task_id': '3e03a806-0605-4d94-b066-0454bafb2c81', 'start_time': '10:19', 'end_time': '10:20'}[0m
+[1;93mWARNING [2024-06-19 10:22:02 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:02 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:22:03 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:22:03 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-19 10:22:05 - admin_manager.py:12] - callback data : manager:recorder:get_11  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:05 - record_manager.py:16] - callback data : manager:recorder:get_11  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:05 - record_manager.py:73] - {'file_id': 'none', 'date': '1403/03/30', 'id': '11', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/ae7def00-b4cd-427e-8402-cff2eb7472ab.mp4', 'task_id': 'ae7def00-b4cd-427e-8402-cff2eb7472ab', 'start_time': '10:13', 'end_time': '10:13'}[0m
+[1;93mWARNING [2024-06-19 10:22:08 - admin_manager.py:12] - callback data : manager:recorder:get_12  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:08 - record_manager.py:16] - callback data : manager:recorder:get_12  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:08 - record_manager.py:73] - {'file_id': 'BAACAgQAAxkDAAIDTmZyf_9phakqjKYro6oOGc5I0ApjAAKMEwAC7G-YU6fWaimK8tQbHgQ', 'date': '1403/03/30', 'id': '12', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/859746e3-536f-4148-9ceb-48a01aefe41d.mp4', 'task_id': '859746e3-536f-4148-9ceb-48a01aefe41d', 'start_time': '10:18', 'end_time': '10:19'}[0m
+[1;93mWARNING [2024-06-19 10:22:12 - admin_manager.py:12] - callback data : manager:recorder:get_13  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:12 - record_manager.py:16] - callback data : manager:recorder:get_13  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:22:12 - record_manager.py:73] - {'file_id': 'BAACAgQAAxkDAAIDT2ZygBNxD6qcw8Z07vucIzCi01ajAAKOEwAC7G-YU2MeoiBMcH-FHgQ', 'date': '1403/03/30', 'id': '13', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/3e03a806-0605-4d94-b066-0454bafb2c81.mp4', 'task_id': '3e03a806-0605-4d94-b066-0454bafb2c81', 'start_time': '10:19', 'end_time': '10:20'}[0m
+[1;92mINFO [2024-06-19 10:23:53 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:23:57 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:23:57 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:23:59 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:23:59 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-19 10:25:00 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 10:25:04 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 10:25:04 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 10:25:04 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 10:25:04 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 10:25:04 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-19 10:25:12 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-19 10:25:12 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-19 10:25:12 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-19 10:25:12 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-19 10:25:12 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-19 10:25:12 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-19 10:25:12 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-19 10:25:12 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-19 10:25:12 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-19 10:25:13 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-19 10:25:13 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-19 10:25:13 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 10:25:13 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-19 10:25:13 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-19 10:25:13 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 10:25:36 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:25:38 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:25:39 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:25:41 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:25:41 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:16 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:17 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:18 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:18 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:42 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:42 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:53 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:26:53 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:27:33 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:27:33 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-19 10:27:33 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:27:35 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:27:36 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:27:37 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:27:53 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:27:53 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:28:14 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:28:16 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:28:16 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:28:18 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:28:18 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:31 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:31 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:33 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:33 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:39 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:40 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:41 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:29:41 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:30:49 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:30:50 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:30:57 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:30:57 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:31:39 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:31:39 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-19 10:38:48 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:38:55 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:38:55 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:39:35 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:39:35 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-19 10:39:40 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-19 10:39:40 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-19 10:39:55 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:39:57 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:39:57 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:40:06 - admin_manager.py:12] - callback data : manager:recorder:get_1  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:40:06 - record_manager.py:16] - callback data : manager:recorder:get_1  - user : 5522477996[0m
+[1;93mWARNING [2024-06-19 10:40:06 - record_manager.py:73] - {'file_id': 'BAACAgQAAxkDAAIDaWZyhDSwIIDFTKy4bjAJCFRc6RXHAAKXEwAC7G-YU7HfxaxzZ9CjHgQ', 'date': '1403/03/30', 'id': '1', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/5f13a9e6-e41a-4e13-9270-66e9e72111da.mp4', 'task_id': '5f13a9e6-e41a-4e13-9270-66e9e72111da', 'start_time': '10:39', 'end_time': '10:39'}[0m
+[1;92mINFO [2024-06-19 10:45:46 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-19 10:45:49 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-19 10:45:49 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-19 10:45:49 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-19 10:45:49 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-19 10:45:49 - session.py:180] - Session stopped[0m
