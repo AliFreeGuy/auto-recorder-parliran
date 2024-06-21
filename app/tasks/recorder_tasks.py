@@ -137,8 +137,8 @@ def sender(self, recorder):
 
 
 
-
-
+#celery -A recorder_tasks worker --beat -Q downloader_queue --concurrency=1 -n downloader_worker@%h
+#celery -A recorder_tasks worker -Q uploader_queue --concurrency=1 -n uploader_worker@%h
 
 
 
