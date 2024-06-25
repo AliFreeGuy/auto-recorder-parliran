@@ -9,6 +9,8 @@ from pyrogram import Client, filters
 from os.path import abspath, dirname
 import sys
 from datetime import datetime, timezone
+from pathlib import Path
+import jdatetime
 
 
 parent_dir = dirname(dirname(abspath(__file__)))
@@ -71,6 +73,12 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
+
+        current_jalali_date = jdatetime.date.today().strftime('%Y-%m-%d')
+        records_dir = Path(os.getcwd()) / 'records'
+        date_dir = records_dir / current_jalali_date
+        date_dir.mkdir(parents=True, exist_ok=True)
+        recording_file = date_dir / f'{self.request.id}.mp4'
         command = [
             'ffmpeg',
             '-y',
@@ -81,9 +89,9 @@ def downloader(self):
             '-c:a', 'aac',
             '-b:a', '64k',
             '-f', 'mpegts',
-            f'{self.request.id}.mp4'
+            recording_file
         ]
-        recording_file = os.path.join(os.getcwd(), f'{self.request.id}.mp4')
+        
         print(f" ############### Recording saved as: {recording_file} ############### ")
         times = jalalidate()
         cache.create_recorder(

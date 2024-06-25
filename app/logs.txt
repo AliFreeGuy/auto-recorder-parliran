@@ -8600,3 +8600,269 @@ pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_I
 [1;92mINFO [2024-06-19 10:45:49 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-06-19 10:45:49 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-06-19 10:45:49 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 08:48:55 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-25 08:48:55 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 08:48:55 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 08:48:55 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-25 08:48:57 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-25 08:48:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 08:48:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 08:48:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 08:48:57 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 08:48:57 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 08:48:57 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 08:48:57 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-25 08:48:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 08:48:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 08:48:58 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 08:48:59 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-25 08:48:59 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 08:48:59 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 08:48:59 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 08:49:00 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 08:49:00 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 08:49:00 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 08:49:00 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 08:49:00 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 08:49:00 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 08:49:00 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 08:49:01 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-25 08:49:01 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-25 08:49:01 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 08:49:01 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 08:49:01 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-25 08:49:01 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 08:49:54 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:49:57 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:49:57 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:00 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:00 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:23 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:23 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:25 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:25 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:26 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:26 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:28 - admin_manager.py:12] - callback data : manager:recorder:get_2  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:28 - record_manager.py:16] - callback data : manager:recorder:get_2  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 08:50:28 - record_manager.py:73] - {'task_id': 'a936794f-e4a1-4fe5-9350-ca1a3ceed19b', 'end_time': '16:02', 'id': '2', 'start_time': '15:55', 'date': '1403/04/01', 'file_id': 'BAACAgQAAxkDAAIDdmZ1cwLQ2SyWyLC9aVHrw7VJHj-fAAJ7EwAC8YeoU4c31PWRs4zVHgQ', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/a936794f-e4a1-4fe5-9350-ca1a3ceed19b.mp4'}[0m
+[1;92mINFO [2024-06-25 08:50:46 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-25 08:50:50 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 08:50:50 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 08:50:50 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 08:50:50 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 08:50:50 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 08:51:48 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 08:51:48 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 08:51:48 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 08:51:48 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 08:51:49 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 08:51:49 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 08:51:49 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 08:51:49 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 08:51:49 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 08:51:49 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-25 08:51:49 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-25 08:51:49 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 08:51:49 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 08:51:49 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-25 08:51:49 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 08:52:10 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-25 08:52:14 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 08:52:14 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 08:52:14 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 08:52:14 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 08:52:14 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 09:04:43 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 09:04:43 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 09:04:44 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 09:04:44 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 09:04:44 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 09:04:44 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 09:04:44 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 09:04:44 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 09:04:44 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 09:04:44 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-25 09:04:44 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-25 09:04:44 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 09:04:44 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 09:04:44 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-25 09:04:44 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 09:04:46 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:04:47 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:04:47 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:04:50 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:04:50 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-25 09:07:50 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-25 09:07:55 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 09:07:55 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 09:07:55 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 09:07:55 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 09:07:55 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 09:07:57 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 09:07:57 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 09:07:57 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 09:07:57 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 09:07:58 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 09:07:58 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 09:07:58 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 09:07:58 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 09:07:58 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 09:07:58 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-25 09:07:58 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-25 09:07:58 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 09:07:58 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 09:07:58 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-25 09:07:58 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;93mWARNING [2024-06-25 09:08:00 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:08:00 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-25 09:08:19 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-25 09:08:19 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-25 09:08:21 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:08:21 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:08:23 - admin_manager.py:12] - callback data : manager:recorder:get_1  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:08:23 - record_manager.py:16] - callback data : manager:recorder:get_1  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:08:23 - record_manager.py:73] - {'task_id': '15419c6d-5973-4be8-9e32-2236a0ec3bc7', 'id': '1', 'end_time': '09:08', 'date': '1403/04/05', 'start_time': '09:07', 'file_id': 'BAACAgQAAxkDAAIDvWZ6V8p2PxBd2J-9xkfEbm1Cf6OTAAJNEQAC-VnRU8fLYclkyu74HgQ', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/1403-04-05/15419c6d-5973-4be8-9e32-2236a0ec3bc7.mp4'}[0m
+[1;93mWARNING [2024-06-25 09:12:18 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:18 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:22 - admin_manager.py:12] - callback data : manager:recorder:get_4  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:22 - record_manager.py:16] - callback data : manager:recorder:get_4  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:22 - record_manager.py:73] - {'task_id': 'f7104de5-041b-45b1-9cb6-3bb34991d34f', 'id': '4', 'end_time': '09:09', 'date': '1403/04/05', 'start_time': '09:09', 'file_id': 'none', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/1403-04-05/records/f7104de5-041b-45b1-9cb6-3bb34991d34f.mp4'}[0m
+[1;93mWARNING [2024-06-25 09:12:23 - admin_manager.py:12] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:23 - record_manager.py:16] - callback data : manager:recorder:get_3  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:23 - record_manager.py:73] - {'task_id': 'bfe0f368-5699-4e80-9f80-4fcffdb11df3', 'id': '3', 'end_time': '09:09', 'date': '1403/04/05', 'start_time': '09:09', 'file_id': 'none', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/1403-04-05/records/bfe0f368-5699-4e80-9f80-4fcffdb11df3.mp4'}[0m
+[1;93mWARNING [2024-06-25 09:12:23 - admin_manager.py:12] - callback data : manager:recorder:get_2  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:23 - record_manager.py:16] - callback data : manager:recorder:get_2  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:12:23 - record_manager.py:73] - {'task_id': '2bf63129-2e92-4951-bdcb-269af124dde3', 'id': '2', 'end_time': '09:09', 'date': '1403/04/05', 'start_time': '09:09', 'file_id': 'none', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/1403-04-05/records/2bf63129-2e92-4951-bdcb-269af124dde3.mp4'}[0m
+[1;92mINFO [2024-06-25 09:12:24 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-25 09:12:24 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-25 09:12:28 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-25 09:12:33 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 09:12:33 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 09:12:33 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 09:12:33 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 09:12:33 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 09:12:46 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 09:12:46 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 09:12:46 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 09:12:46 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 09:12:47 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 09:12:47 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 09:12:47 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 09:12:47 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 09:12:47 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 09:12:47 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-25 09:12:47 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-25 09:12:47 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 09:12:47 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 09:12:47 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-25 09:12:47 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 09:13:17 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:20 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:20 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:22 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:22 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:29 - admin_manager.py:12] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:29 - record_manager.py:16] - callback data : manager:recorder:datetimenow  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:32 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:32 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-25 09:13:35 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-25 09:13:37 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-25 09:13:37 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-25 09:13:40 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:40 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:42 - admin_manager.py:12] - callback data : manager:recorder:get_1  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:42 - record_manager.py:16] - callback data : manager:recorder:get_1  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 09:13:42 - record_manager.py:73] - {'task_id': '56f3601c-1bcf-4629-a512-04152bc15e9c', 'id': '1', 'end_time': '09:13', 'date': '1403/04/05', 'start_time': '09:12', 'file_id': 'BAACAgQAAxkDAAIDxGZ6WQlEfq-nSGVx0Xx0kH1lm7q5AAJQEQAC-VnRU8JbZZ59kNygHgQ', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/records/1403-04-05/56f3601c-1bcf-4629-a512-04152bc15e9c.mp4'}[0m
+[1;92mINFO [2024-06-25 09:13:46 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-25 09:13:47 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 09:13:47 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 09:13:47 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 09:13:47 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 09:13:47 - session.py:180] - Session stopped[0m
