@@ -34,19 +34,24 @@ def admins_btn(admins  ):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 def recorder_lists():
     buttons = []
-
     start_end_time = [
-        
-        InlineKeyboardButton(text='🔙',callback_data='manager:back'),
-        InlineKeyboardButton(text='🔄',callback_data='manager:recorder:reload'),
-
-        
-        InlineKeyboardButton(text='⏰',callback_data='manager:recorder:datetimenow'),
-
-        # InlineKeyboardButton(text='➕',callback_data=f'manager:recorder:set_recorder') ,
-
+        InlineKeyboardButton(text='🔙', callback_data='manager:back'),
+        InlineKeyboardButton(text='🔄', callback_data='manager:recorder:reload'),
+        InlineKeyboardButton(text='⏰', callback_data='manager:recorder:datetimenow'),
     ]
     buttons.append(start_end_time)
 
@@ -54,10 +59,59 @@ def recorder_lists():
     sorted_data = sorted(data, key=lambda x: int(x['id']), reverse=True)
 
     for item in sorted_data:
-        recorder_text =f'{item["date"]} {item["start_time"]} {item["end_time"]}'
-        buttons.append([ InlineKeyboardButton(text =recorder_text,callback_data=f'manager:recorder:get_{item["id"]}'),])
+        if item['end_time'] != 'none' : 
+            start_time = datetime.strptime(item["date"] + " " + item["start_time"], "%Y/%m/%d %H:%M")
+            end_time = datetime.strptime(item["date"] + " " + item["end_time"], "%Y/%m/%d %H:%M")
+            time_difference = (end_time - start_time).total_seconds()
+            
+            
+            if time_difference > 120:  
+                recorder_text = f'{item["date"]} {item["start_time"]} {item["end_time"]}'
+                buttons.append([InlineKeyboardButton(text=recorder_text, callback_data=f'manager:recorder:get_{item["id"]}'),])
 
+        else :
+            recorder_text = f'{item["date"]} {item["start_time"]} {item["end_time"]}'
+            buttons.append([InlineKeyboardButton(text=recorder_text, callback_data=f'manager:recorder:get_{item["id"]}'),])
 
-
-    
     return InlineKeyboardMarkup(buttons)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# def recorder_lists():
+#     buttons = []
+#     start_end_time = [
+#         InlineKeyboardButton(text='🔙',callback_data='manager:back'),
+#         InlineKeyboardButton(text='🔄',callback_data='manager:recorder:reload'),
+#         InlineKeyboardButton(text='⏰',callback_data='manager:recorder:datetimenow'),
+#                     ]
+#     buttons.append(start_end_time)
+
+#     data = cache.recorders()
+#     sorted_data = sorted(data, key=lambda x: int(x['id']), reverse=True)
+
+#     for item in sorted_data:
+#         recorder_text =f'{item["date"]} {item["start_time"]} {item["end_time"]}'
+#         buttons.append([ InlineKeyboardButton(text =recorder_text,callback_data=f'manager:recorder:get_{item["id"]}'),])
+#     return InlineKeyboardMarkup(buttons)
