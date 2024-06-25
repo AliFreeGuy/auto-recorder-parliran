@@ -73,6 +73,9 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
+        WATERMARK_IMAGE = '/home/freeguy/Desktop/project/majles/app/tasks/img.png'
+        watermark_size = '100:-1'  # -1
+        overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
         current_jalali_date = jdatetime.date.today().strftime('%Y-%m-%d')
         records_dir = Path(os.getcwd()) / 'records'
@@ -83,6 +86,8 @@ def downloader(self):
             'ffmpeg',
             '-y',
             '-i', STREAM_URL,
+            '-i', WATERMARK_IMAGE,
+            '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay={overlay_position}:enable='gte(t,1)'",
             '-c:v', 'libx265',
             '-crf', '35',
             '-preset', 'medium',
