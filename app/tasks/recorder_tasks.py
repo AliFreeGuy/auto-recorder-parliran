@@ -27,8 +27,8 @@ import requests
 import socks
 import socket
 
-SOCKS5_PROXY_HOST = config.SOCKS_PROXY
-SOCKS5_PROXY_PORT = config.SOCKS_PORT
+SOCKS5_PROXY_HOST = '127.0.0.1'
+SOCKS5_PROXY_PORT = 10080
 
 socks.set_default_proxy(socks.SOCKS5, SOCKS5_PROXY_HOST, SOCKS5_PROXY_PORT)
 socket.socket = socks.socksocket
@@ -82,8 +82,7 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
-        WATERMARK_IMAGE = os.path.join(os.path.dirname(__file__), 'img.png')
-        
+        WATERMARK_IMAGE = '/home/freeguy/Desktop/project/majles/app/tasks/img.png'
         watermark_size = '100:-1'  # -1
         overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
