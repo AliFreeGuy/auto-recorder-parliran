@@ -82,7 +82,8 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
-        WATERMARK_IMAGE = '/home/freeguy/Desktop/project/majles/app/tasks/img.png'
+        WATERMARK_IMAGE = os.path.join(os.path.dirname(__file__), 'img.png')
+        
         watermark_size = '100:-1'  # -1
         overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
