@@ -9473,3 +9473,339 @@ pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_I
 [1;92mINFO [2024-06-25 14:07:59 - connection.py:66] - Disconnected[0m
 [1;92mINFO [2024-06-25 14:07:59 - session.py:315] - NetworkTask stopped[0m
 [1;92mINFO [2024-06-25 14:07:59 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-25 14:24:59 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-25 14:24:59 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-25 14:24:59 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-25 14:24:59 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-25 14:25:00 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-25 14:25:00 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-25 14:25:00 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-25 14:25:00 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-25 14:25:00 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-25 14:25:01 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-25 14:25:01 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-25 14:25:01 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 14:25:01 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-25 14:25:01 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-25 14:25:01 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 14:25:33 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-25 14:25:33 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-25 14:25:35 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:36 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:36 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:39 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:39 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:40 - admin_manager.py:12] - callback data : manager:recorder:get_9  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:40 - record_manager.py:16] - callback data : manager:recorder:get_9  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:25:40 - record_manager.py:73] - {'task_id': '79bc0e71-1dba-40c4-9d9e-ee7f8bd54e58', 'id': '9', 'end_time': 'none', 'date': '1403/04/05', 'start_time': '14:25', 'file_id': 'none', 'file_path': '/home/freeguy/Desktop/project/majles/app/tasks/records/1403-04-05/79bc0e71-1dba-40c4-9d9e-ee7f8bd54e58.mp4'}[0m
+[1;92mINFO [2024-06-25 14:25:57 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-25 14:25:57 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-25 14:26:08 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:26:11 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:26:11 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:26:15 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-25 14:26:15 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-25 14:26:17 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-25 14:26:17 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-25 14:26:19 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-25 14:26:20 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-25 14:26:20 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-25 14:26:20 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-25 14:26:20 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-25 14:26:20 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-28 14:51:20 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-28 14:51:20 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-28 14:51:20 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-28 14:51:20 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-28 14:51:22 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-28 14:51:22 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-28 14:51:22 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-28 14:51:22 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-28 14:51:22 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-28 14:51:22 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-28 14:51:23 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-28 14:51:23 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-28 14:51:23 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-28 14:51:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-28 14:51:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-28 14:51:24 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-28 14:51:25 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-28 14:51:25 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-28 14:51:25 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-28 14:51:25 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-28 14:51:26 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-28 14:51:26 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-28 14:51:26 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-28 14:51:26 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-28 14:51:26 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-28 14:51:26 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-28 14:51:26 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-28 14:51:27 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-28 14:51:27 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-28 14:51:27 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-28 14:51:27 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-28 14:51:27 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-28 14:51:27 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-28 14:51:30 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:33 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:33 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:36 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:36 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:37 - admin_manager.py:12] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:37 - record_manager.py:16] - callback data : manager:admins  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:39 - admin_manager.py:12] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;93mWARNING [2024-06-28 14:51:43 - record_manager.py:16] - callback data : manager:add_admin  - user : 5522477996[0m
+[1;92mINFO [2024-06-28 14:59:14 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-28 14:59:16 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-28 14:59:16 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-28 14:59:16 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-28 14:59:16 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-28 14:59:16 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-28 14:59:17 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-28 14:59:17 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-28 14:59:17 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-28 14:59:17 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-28 14:59:17 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-29 15:32:21 - auth.py:82] - Start creating a new auth key on DC2[0m
+[1;92mINFO [2024-06-29 15:32:21 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-29 15:32:21 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-29 15:32:21 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-29 15:32:23 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-29 15:32:23 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-29 15:32:23 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-29 15:32:23 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-29 15:32:23 - connection.py:54] - Connected! Production DC2 - IPv4[0m
+[1;92mINFO [2024-06-29 15:32:23 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-29 15:32:24 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-29 15:32:24 - session.py:180] - Session stopped[0m
+[1;92mINFO [2024-06-29 15:32:24 - auth.py:82] - Start creating a new auth key on DC4[0m
+[1;92mINFO [2024-06-29 15:32:24 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-29 15:32:24 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-29 15:32:24 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-29 15:32:26 - auth.py:267] - Done auth key exchange: DhGenOk[0m
+[1;92mINFO [2024-06-29 15:32:26 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-29 15:32:26 - tcp.py:67] - Using proxy 127.0.0.1[0m
+[1;92mINFO [2024-06-29 15:32:26 - connection.py:47] - Connecting...[0m
+[1;92mINFO [2024-06-29 15:32:26 - connection.py:54] - Connected! Production DC4 - IPv4[0m
+[1;92mINFO [2024-06-29 15:32:26 - session.py:294] - NetworkTask started[0m
+[1;92mINFO [2024-06-29 15:32:26 - session.py:139] - Session initialized: Layer 158[0m
+[1;92mINFO [2024-06-29 15:32:26 - session.py:140] - Device: CPython 3.10.12 - Pyrogram 2.0.106[0m
+[1;92mINFO [2024-06-29 15:32:26 - session.py:141] - System: Linux 5.15.0-101-generic (en)[0m
+[1;92mINFO [2024-06-29 15:32:26 - session.py:155] - Session started[0m
+[1;92mINFO [2024-06-29 15:32:26 - session.py:272] - PingTask started[0m
+[1;92mINFO [2024-06-29 15:32:27 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 0 from "plugins.admin_manager"[0m
+[1;92mINFO [2024-06-29 15:32:27 - client.py:698] - [video-recorder] [LOAD] CallbackQueryHandler("admin_manager_handler") in group 1 from "plugins.record_manager"[0m
+[1;92mINFO [2024-06-29 15:32:27 - client.py:698] - [video-recorder] [LOAD] MessageHandler("start_manager") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-29 15:32:27 - client.py:698] - [video-recorder] [LOAD] MessageHandler("user_not_admin") in group 0 from "plugins.start_command_manager"[0m
+[1;92mINFO [2024-06-29 15:32:27 - client.py:775] - [video-recorder] Successfully loaded 4 plugins from "plugins"[0m
+[1;92mINFO [2024-06-29 15:32:27 - dispatcher.py:154] - Started 8 HandlerTasks[0m
+[1;92mINFO [2024-06-29 15:32:27 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:32:28 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-29 15:32:29 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-29 15:32:29 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:29 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:31 - admin_manager.py:12] - callback data : date:1717070548  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:31 - record_manager.py:16] - callback data : date:1717070548  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:36 - admin_manager.py:12] - callback data : manager:back  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:36 - record_manager.py:16] - callback data : manager:back  - user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:32:47 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:49 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:32:49 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:33:01 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:33:03 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:33:03 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:33:32 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:33:32 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:33:33 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:33:33 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:35:34 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:35:36 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:35:36 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:35:38 - admin_manager.py:12] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:35:38 - record_manager.py:16] - callback data : manager:recorder:reload  - user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:37:50 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:37:51 - admin_manager.py:12] - callback data : manager:recorder  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:37:51 - record_manager.py:16] - callback data : manager:recorder  - user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:37:51 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-29 15:37:52 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;93mWARNING [2024-06-29 15:38:00 - admin_manager.py:12] - callback data : date:1717070871  - user : 5522477996[0m
+[1;93mWARNING [2024-06-29 15:38:00 - record_manager.py:16] - callback data : date:1717070871  - user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:38:04 - start_command_manager.py:14] - command : /start   -   user : 5522477996[0m
+[1;92mINFO [2024-06-29 15:38:05 - start_command_manager.py:26] - user not admin : 7400901346[0m
+[1;91mERROR [2024-06-29 15:38:06 - dispatcher.py:253] - Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")[0m
+Traceback (most recent call last):
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/dispatcher.py", line 242, in handler_worker
+    await self.loop.run_in_executor(
+  File "/usr/lib/python3.10/concurrent/futures/thread.py", line 58, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/sync.py", line 78, in async_to_sync_wrap
+    return asyncio.run_coroutine_threadsafe(coroutine, main_loop).result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 458, in result
+    return self.__get_result()
+  File "/usr/lib/python3.10/concurrent/futures/_base.py", line 403, in __get_result
+    raise self._exception
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyromod/listen/message_handler.py", line 98, in resolve_future_or_callback
+    await self.original_callback(client, message, *args)
+  File "/home/freeguy/Desktop/project/majles/app/plugins/start_command_manager.py", line 27, in user_not_admin
+    await bot.send_message(msg.from_user.id , text.user_not_admin )
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/messages/send_message.py", line 126, in send_message
+    r = await self.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/methods/advanced/invoke.py", line 79, in invoke
+    r = await self.session.invoke(
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 389, in invoke
+    return await self.send(query, timeout=timeout)
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/session/session.py", line 357, in send
+    RPCError.raise_it(result, type(data))
+  File "/home/freeguy/Desktop/project/majles/venv/lib/python3.10/site-packages/pyrogram/errors/rpc_error.py", line 91, in raise_it
+    raise getattr(
+pyrogram.errors.exceptions.bad_request_400.UserIsBot: Telegram says: [400 USER_IS_BOT] - A bot cannot send messages to other bots or to itself (caused by "messages.SendMessage")
+[1;92mINFO [2024-06-29 15:38:06 - idle.py:75] - Stop signal received (SIGINT). Exiting...[0m
+[1;92mINFO [2024-06-29 15:38:07 - dispatcher.py:167] - Stopped 8 HandlerTasks[0m
+[1;92mINFO [2024-06-29 15:38:07 - session.py:291] - PingTask stopped[0m
+[1;92mINFO [2024-06-29 15:38:07 - connection.py:66] - Disconnected[0m
+[1;92mINFO [2024-06-29 15:38:07 - session.py:315] - NetworkTask stopped[0m
+[1;92mINFO [2024-06-29 15:38:07 - session.py:180] - Session stopped[0m
