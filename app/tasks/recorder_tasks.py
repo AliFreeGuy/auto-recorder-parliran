@@ -93,7 +93,7 @@ def downloader(self):
             '-preset', 'medium',
             '-c:a', 'aac',
             '-b:a', '64k',
-            '-f', 'mpegts',
+            '-f', 'mp4',
             recording_file
         ]
         
