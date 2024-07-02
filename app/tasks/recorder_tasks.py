@@ -37,7 +37,7 @@ app.conf.update(
 app.conf.beat_schedule = {
     'check-stream-every-10-seconds': {
         'task': 'tasks.checker',
-        'schedule': 10.0,  # اجرای هر 10 ثانیه یک بار
+        'schedule': 100.1,  # اجرای هر 10 ثانیه یک بار
     },
 }
 
@@ -73,7 +73,7 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
-        WATERMARK_IMAGE = '/home/freeguy/Desktop/project/majles/app/tasks/img.png'
+        WATERMARK_IMAGE = '/root/recorder/auto-recorder-parliran/app/tasks/img.png'
         watermark_size = '100:-1'  # -1
         overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
@@ -81,7 +81,10 @@ def downloader(self):
         records_dir = Path(os.getcwd()) / 'records'
         date_dir = records_dir / current_jalali_date
         date_dir.mkdir(parents=True, exist_ok=True)
-        recording_file = date_dir / f'{self.request.id}.mp4'
+        times = jalalidate()
+        jdate = times['jdate'].replace('/' , '-')
+        jtime = times['jtime'].replace(':' , '-')
+        recording_file = date_dir / f'{jdate}_{jtime}_none.mp4'
         command = [
             'ffmpeg',
             '-y',
@@ -96,9 +99,7 @@ def downloader(self):
             '-f', 'mp4',
             recording_file
         ]
-        
         print(f" ############### Recording saved as: {recording_file} ############### ")
-        times = jalalidate()
         cache.create_recorder(
             start_time=times['jtime'],
             date=times['jdate'],
@@ -114,7 +115,11 @@ def downloader(self):
             if self.request.id == cache.redis.hget(r, 'task_id'):
                 recorder = cache.redis.hgetall(r)
                 times = jalalidate()
+                jtime = times['jtime'].replace(':' , '-')
+                recording_file =f'{recorder["file_path"]}'.replace('_none.mp4' , f'_{times["jtime"].replace(":" , "-")}.mp4')
                 cache.update_recorder(recorder['id'] , key='end_time' , val=times['jtime'])
+                os.rename(recorder['file_path'] , recording_file)
+                
         print('<<<< RECORDED COMPLETED >>>>')
         sender.delay(recorder)
     except subprocess.CalledProcessError:
