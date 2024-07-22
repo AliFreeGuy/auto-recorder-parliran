@@ -37,7 +37,7 @@ app.conf.update(
 app.conf.beat_schedule = {
     'check-stream-every-10-seconds': {
         'task': 'tasks.checker',
-        'schedule': 100.1,  # اجرای هر 10 ثانیه یک بار
+        'schedule': 10.1,  # اجرای هر 10 ثانیه یک بار
     },
 }
 
@@ -73,7 +73,7 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
-        WATERMARK_IMAGE = '/root/recorder/auto-recorder-parliran/app/tasks/img.png'
+        WATERMARK_IMAGE = '/home/freeguy/Desktop/project/majles/app/tasks/img.png'
         watermark_size = '100:-1'  # -1
         overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
@@ -133,6 +133,9 @@ def downloader(self):
         sender.delay(recorder)
         print('<<<< RECORD FAILED >>>>')
 
+
+
+
 @app.task(name='tasks.sender', bind=True, default_retry_delay=1, queue='uploader_queue')
 def sender(self, recorder):
     
@@ -141,9 +144,6 @@ def sender(self, recorder):
     else :
         bot = Client('sender' , api_id=config.API_ID , api_hash=config.API_HASH , bot_token=config.BOT_TOKEN)
         
-
-    
-
     recorder = cache.redis.hgetall(f'recorder:{recorder["id"]}')
     print(recorder)
     caption = f'ضبط صحن علنی مجلس : {str(recorder["date"])}\nساعت شروع : {str(recorder["start_time"])}\nساعت پایان : {str(recorder["end_time"])}'
