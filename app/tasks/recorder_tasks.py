@@ -88,11 +88,11 @@ def downloader(self):
         jtime = times['jtime'].replace(':' , '-')
         recording_file = date_dir / f'{jdate}_{jtime}_none.mp4'
         command = [
-        'ffmpeg',
+    'ffmpeg',
     '-y',
     '-i', STREAM_URL,
     '-i', WATERMARK_IMAGE,
-    '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay=(main_w-overlay_w)/2:main_h-overlay_h-20:enable='gte(t,1)'",
+    '-filter_complex', f"[0:v]crop=690:376:15:100,crop=690:376:15:100[vid];[1:v]scale={watermark_size}[watermark];[vid][watermark]overlay=(main_w-overlay_w)/2:main_h-overlay_h-20:enable='gte(t,1)'",
     '-c:v', 'libx265',
     '-crf', '35',
     '-preset', 'medium',
