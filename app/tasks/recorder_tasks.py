@@ -73,7 +73,9 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
-        WATERMARK_IMAGE = '/home/freeguy/Desktop/project/majles/app/tasks/img.png'
+        WATERMARK_FILENAME = 'img.png'
+        current_directory = os.getcwd()
+        WATERMARK_IMAGE = os.path.join(current_directory, WATERMARK_FILENAME)
         watermark_size = '100:-1'  # -1
         overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
@@ -86,19 +88,19 @@ def downloader(self):
         jtime = times['jtime'].replace(':' , '-')
         recording_file = date_dir / f'{jdate}_{jtime}_none.mp4'
         command = [
-            'ffmpeg',
-            '-y',
-            '-i', STREAM_URL,
-            '-i', WATERMARK_IMAGE,
-            '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay={overlay_position}:enable='gte(t,1)'",
-            '-c:v', 'libx265',
-            '-crf', '35',
-            '-preset', 'medium',
-            '-c:a', 'aac',
-            '-b:a', '64k',
-            '-f', 'mp4',
-            recording_file
-        ]
+        'ffmpeg',
+    '-y',
+    '-i', STREAM_URL,
+    '-i', WATERMARK_IMAGE,
+    '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay=(main_w-overlay_w)/2:main_h-overlay_h-20:enable='gte(t,1)'",
+    '-c:v', 'libx265',
+    '-crf', '35',
+    '-preset', 'medium',
+    '-c:a', 'aac',
+    '-b:a', '64k',
+    '-f', 'mp4',
+    recording_file
+]
         print(f" ############### Recording saved as: {recording_file} ############### ")
         cache.create_recorder(
             start_time=times['jtime'],
