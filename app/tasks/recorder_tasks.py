@@ -37,7 +37,7 @@ app.conf.update(
 app.conf.beat_schedule = {
     'check-stream-every-10-seconds': {
         'task': 'tasks.checker',
-        'schedule': 100.1,  # اجرای هر 10 ثانیه یک بار
+        'schedule': 10.1,  # اجرای هر 10 ثانیه یک بار
     },
 }
 
@@ -73,7 +73,9 @@ def checker(self):
 @app.task(name='tasks.downloader', bind=True, default_retry_delay=1, queue='downloader_queue')
 def downloader(self):
     try:
-        WATERMARK_IMAGE = '/root/recorder/auto-recorder-parliran/app/tasks/img.png'
+        WATERMARK_FILENAME = 'img.png'
+        current_directory = os.getcwd()
+        WATERMARK_IMAGE = os.path.join(current_directory, WATERMARK_FILENAME)
         watermark_size = '100:-1'  # -1
         overlay_position = 'main_w-overlay_w-10:main_h/2-overlay_h/2'
 
@@ -86,19 +88,19 @@ def downloader(self):
         jtime = times['jtime'].replace(':' , '-')
         recording_file = date_dir / f'{jdate}_{jtime}_none.mp4'
         command = [
-            'ffmpeg',
-            '-y',
-            '-i', STREAM_URL,
-            '-i', WATERMARK_IMAGE,
-            '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay={overlay_position}:enable='gte(t,1)'",
-            '-c:v', 'libx265',
-            '-crf', '35',
-            '-preset', 'medium',
-            '-c:a', 'aac',
-            '-b:a', '64k',
-            '-f', 'mp4',
-            recording_file
-        ]
+    'ffmpeg',
+    '-y',
+    '-i', STREAM_URL,
+    '-i', WATERMARK_IMAGE,
+    '-filter_complex', f"[0:v]crop=690:376:15:100,crop=690:376:15:100[vid];[1:v]scale={watermark_size}[watermark];[vid][watermark]overlay=(main_w-overlay_w)/2:main_h-overlay_h-20:enable='gte(t,1)'",
+    '-c:v', 'libx265',
+    '-crf', '23',
+    '-preset', 'medium',
+    '-c:a', 'aac',
+    '-b:a', '64k',
+    '-f', 'mp4',
+    recording_file
+]
         print(f" ############### Recording saved as: {recording_file} ############### ")
         cache.create_recorder(
             start_time=times['jtime'],
@@ -133,6 +135,9 @@ def downloader(self):
         sender.delay(recorder)
         print('<<<< RECORD FAILED >>>>')
 
+
+
+
 @app.task(name='tasks.sender', bind=True, default_retry_delay=1, queue='uploader_queue')
 def sender(self, recorder):
     
@@ -141,9 +146,6 @@ def sender(self, recorder):
     else :
         bot = Client('sender' , api_id=config.API_ID , api_hash=config.API_HASH , bot_token=config.BOT_TOKEN)
         
-
-    
-
     recorder = cache.redis.hgetall(f'recorder:{recorder["id"]}')
     print(recorder)
     caption = f'ضبط صحن علنی مجلس : {str(recorder["date"])}\nساعت شروع : {str(recorder["start_time"])}\nساعت پایان : {str(recorder["end_time"])}'
@@ -190,6 +192,752 @@ def sender(self, recorder):
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from celery import Celery
+# from celery.schedules import crontab
+# import redis
+# from os import environ as env
+# from os.path import abspath, dirname
+# import os
+# import sys
+# from datetime import datetime , timezone
+# import time
+# import subprocess
+# from pyrogram import Client , filters
+# import requests
+# import pytz
+# import jdatetime
+
+
+
+
+# parent_dir = dirname(dirname(abspath(__file__)))
+# sys.path.insert(0, parent_dir)
+# from config import REDIS_DB , REDIS_HOST ,  REDIS_PORT  , STREAM_URL
+# from utils import cache
+# from utils.utils import jalalidate
+# import config
+
+
+# r = redis.Redis(host=REDIS_HOST , port=REDIS_PORT , db=REDIS_DB , decode_responses=True)
+# app = Celery('tasks', broker='redis://localhost:6379/0'  , backend='redis://localhost:6379/0')
+# app.conf.timezone = 'UTC'
+# app.conf.update(
+#     task_serializer='json',
+#     result_serializer='json',
+#     accept_content=['json',],
+#     worker_concurrency=1,
+#     worker_prefetch_multiplier=1,
+# )
+# app.conf.beat_schedule = {
+#     'print-every-10-seconds': {
+#         'task': 'tasks.checker',
+#         'schedule': 5.0,
+#     },
+# }
+
+
+
+
+
+
+# @app.task(name='tasks.checker', bind=True, default_retry_delay=1)
+# def checker(self):
+#     try:
+#         response = requests.get(STREAM_URL, timeout=10  , verify=False)
+#         if response.status_code == 200:
+#             if 'EXTM3U' in response.text:
+#                 downloader.delay()
+#                 print('<<<< STREAM STARTED >>>>>')
+#             else:
+#                 print("Stream is not live")
+#         else:
+#             print("Failed to fetch the stream URL")
+#     except requests.RequestException as e:
+#         print(f"Request failed: {e}")
+
+
+
+# @app.task(name = 'tasks.downloader' , bind = True , default_retry_delay=1)
+# def downloader(self ):
+#     try:
+#         command = [
+#             'ffmpeg',
+#             '-y',
+#             '-i', STREAM_URL,
+#             '-c:v', 'libx265',
+#             '-crf', '35',
+#             '-preset', 'medium',
+#             '-c:a', 'aac',
+#             '-b:a', '64k',
+#             '-f', 'mpegts',
+#             f'{self.request.id}.mp4'
+#         ]
+#         recording_file = os.path.join(os.getcwd(), f'{self.request.id}.mp4')
+#         print(f" ############### Recording saved as: {recording_file} ############### ")
+#         times = jalalidate()
+#         cache.create_recorder(
+#                                         start_time=times['jtime'] ,
+#                                         date=times['jdate'],
+#                                         end_time='none',
+#                                         file_path=recording_file , 
+#                                         task_id=self.request.id , 
+#                                         file_id='none',
+#                                 )
+#         subprocess.run(command, check=True)
+#         recorders = cache.redis.keys(f'recorder:*')
+#         recorder = None 
+#         for r in recorders :
+#             if self.request.id == cache.redis.hget(r , 'task_id'):
+#                 recorder = r
+#                 times = jalalidate()
+#                 cache.redis.hset(r , 'end_time' , times['jtime'])
+#         print('<<<< RECORDED COMPLETED >>>>')
+#         sender.delay(recorder)
+#     except subprocess.CalledProcessError:
+#         recorders = cache.redis.keys(f'recorder:*')
+#         recorder = None 
+#         for r in recorders :
+#             if self.request.id == cache.redis.hget(r , 'task_id'):
+#                 recorder = r 
+#                 times = jalalidate()
+#                 cache.redis.hset(r , 'end_time' , times['jtime'])
+
+#         sender.delay(recorder)
+#         print('<<<< RECORD FAILED >>>>')
+
+
+
+
+
+# @app.task(name = 'tasks.sender'  ,  bind = True , default_retry_delay=1 )
+# def sender(self  , recorder ) :
+#     print(config.PROXY)
+#     print(config.API_ID)
+#     print(config.API_HASH)
+#     print(config.BOT_TOKEN)
+#     print(config.BACKUP_CHANNEL)
+#     print(recorder)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from celery import Celery
+# from celery.schedules import crontab
+# import redis
+# from os import environ as env
+# from os.path import abspath, dirname
+# import os
+# import sys
+# from datetime import datetime , timezone
+# import time
+# import subprocess
+# from pyrogram import Client , filters
+# import requests
+# import pytz
+# import jdatetime
+
+
+
+
+# parent_dir = dirname(dirname(abspath(__file__)))
+# sys.path.insert(0, parent_dir)
+# from config import REDIS_DB , REDIS_HOST ,  REDIS_PORT  , STREAM_URL
+# from utils import cache
+# from utils.utils import jalalidate
+# import config
+
+
+# r = redis.Redis(host=REDIS_HOST , port=REDIS_PORT , db=REDIS_DB , decode_responses=True)
+# app = Celery('tasks', broker='redis://localhost:6379/0'  , backend='redis://localhost:6379/0')
+# app.conf.timezone = 'UTC'
+# app.conf.update(
+#     task_serializer='json',
+#     result_serializer='json',
+#     accept_content=['json',],
+#     worker_concurrency=1,
+#     worker_prefetch_multiplier=1,
+# )
+# app.conf.beat_schedule = {
+#     'print-every-10-seconds': {
+#         'task': 'tasks.checker',
+#         'schedule': 5.0,
+#     },
+# }
+
+
+
+
+
+
+# @app.task(name='tasks.checker', bind=True, default_retry_delay=1)
+# def checker(self):
+#     try:
+#         response = requests.get(STREAM_URL, timeout=10  , verify=False)
+#         if response.status_code == 200:
+#             if 'EXTM3U' in response.text:
+#                 downloader.delay()
+#                 print('<<<< STREAM STARTED >>>>>')
+#             else:
+#                 print("Stream is not live")
+#         else:
+#             print("Failed to fetch the stream URL")
+#     except requests.RequestException as e:
+#         print(f"Request failed: {e}")
+
+
+
+# @app.task(name = 'tasks.downloader' , bind = True , default_retry_delay=1)
+# def downloader(self ):
+#     try:
+#         command = [
+#             'ffmpeg',
+#             '-y',
+#             '-i', STREAM_URL,
+#             '-c:v', 'libx265',
+#             '-crf', '35',
+#             '-preset', 'medium',
+#             '-c:a', 'aac',
+#             '-b:a', '64k',
+#             '-f', 'mpegts',
+#             f'{self.request.id}.mp4'
+#         ]
+#         recording_file = os.path.join(os.getcwd(), f'{self.request.id}.mp4')
+#         print(f" ############### Recording saved as: {recording_file} ############### ")
+#         times = jalalidate()
+#         cache.create_recorder(
+#                                         start_time=times['jtime'] ,
+#                                         date=times['jdate'],
+#                                         end_time='none',
+#                                         file_path=recording_file , 
+#                                         task_id=self.request.id , 
+#                                         file_id='none',
+#                                 )
+#         subprocess.run(command, check=True)
+#         recorders = cache.redis.keys(f'recorder:*')
+#         recorder = None 
+#         for r in recorders :
+#             if self.request.id == cache.redis.hget(r , 'task_id'):
+#                 recorder = r
+#                 times = jalalidate()
+#                 cache.redis.hset(r , 'end_time' , times['jtime'])
+#         print('<<<< RECORDED COMPLETED >>>>')
+#         sender.delay(recorder)
+#     except subprocess.CalledProcessError:
+#         recorders = cache.redis.keys(f'recorder:*')
+#         recorder = None 
+#         for r in recorders :
+#             if self.request.id == cache.redis.hget(r , 'task_id'):
+#                 recorder = r 
+#                 times = jalalidate()
+#                 cache.redis.hset(r , 'end_time' , times['jtime'])
+
+#         sender.delay(recorder)
+#         print('<<<< RECORD FAILED >>>>')
+
+
+
+
+
+# @app.task(name = 'tasks.sender'  ,  bind = True , default_retry_delay=1 )
+# def sender(self  , recorder ) :
+#     print(config.PROXY)
+#     print(config.API_ID)
+#     print(config.API_HASH)
+#     print(config.BOT_TOKEN)
+#     print(config.BACKUP_CHANNEL)
+#     print(recorder)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+# from celery import Celery
+# from celery.schedules import crontab
+# import redis
+# from os import environ as env
+# from os.path import abspath, dirname
+# import os
+# import sys
+# from datetime import datetime , timezone
+# import time
+# import subprocess
+# from pyrogram import Client , filters
+# import requests
+# import pytz
+# import jdatetime
+
+
+
+
+# parent_dir = dirname(dirname(abspath(__file__)))
+# sys.path.insert(0, parent_dir)
+# from config import REDIS_DB , REDIS_HOST ,  REDIS_PORT  , STREAM_URL
+# from utils import cache
+# from utils.utils import jalalidate
+# import config
+
+
+# r = redis.Redis(host=REDIS_HOST , port=REDIS_PORT , db=REDIS_DB , decode_responses=True)
+# app = Celery('tasks', broker='redis://localhost:6379/0'  , backend='redis://localhost:6379/0')
+# app.conf.timezone = 'UTC'
+# app.conf.update(
+#     task_serializer='json',
+#     result_serializer='json',
+#     accept_content=['json',],
+#     worker_concurrency=1,
+#     worker_prefetch_multiplier=1,
+# )
+# app.conf.beat_schedule = {
+#     'print-every-10-seconds': {
+#         'task': 'tasks.checker',
+#         'schedule': 5.0,
+#     },
+# }
+
+
+
+
+
+
+# @app.task(name='tasks.checker', bind=True, default_retry_delay=1)
+# def checker(self):
+#     try:
+#         response = requests.get(STREAM_URL, timeout=10  , verify=False)
+#         if response.status_code == 200:
+#             if 'EXTM3U' in response.text:
+#                 downloader.delay()
+#                 print('<<<< STREAM STARTED >>>>>')
+#             else:
+#                 print("Stream is not live")
+#         else:
+#             print("Failed to fetch the stream URL")
+#     except requests.RequestException as e:
+#         print(f"Request failed: {e}")
+
+
+
+# @app.task(name = 'tasks.downloader' , bind = True , default_retry_delay=1)
+# def downloader(self ):
+#     try:
+#         command = [
+#             'ffmpeg',
+#             '-y',
+#             '-i', STREAM_URL,
+#             '-c:v', 'libx265',
+#             '-crf', '35',
+#             '-preset', 'medium',
+#             '-c:a', 'aac',
+#             '-b:a', '64k',
+#             '-f', 'mpegts',
+#             f'{self.request.id}.mp4'
+#         ]
+#         recording_file = os.path.join(os.getcwd(), f'{self.request.id}.mp4')
+#         print(f" ############### Recording saved as: {recording_file} ############### ")
+#         times = jalalidate()
+#         cache.create_recorder(
+#                                         start_time=times['jtime'] ,
+#                                         date=times['jdate'],
+#                                         end_time='none',
+#                                         file_path=recording_file , 
+#                                         task_id=self.request.id , 
+#                                         file_id='none',
+#                                 )
+#         subprocess.run(command, check=True)
+#         recorders = cache.redis.keys(f'recorder:*')
+#         recorder = None 
+#         for r in recorders :
+#             if self.request.id == cache.redis.hget(r , 'task_id'):
+#                 recorder = r
+#                 times = jalalidate()
+#                 cache.redis.hset(r , 'end_time' , times['jtime'])
+#         print('<<<< RECORDED COMPLETED >>>>')
+#         sender.delay(recorder)
+#     except subprocess.CalledProcessError:
+#         recorders = cache.redis.keys(f'recorder:*')
+#         recorder = None 
+#         for r in recorders :
+#             if self.request.id == cache.redis.hget(r , 'task_id'):
+#                 recorder = r 
+#                 times = jalalidate()
+#                 cache.redis.hset(r , 'end_time' , times['jtime'])
+
+#         sender.delay(recorder)
+#         print('<<<< RECORD FAILED >>>>')
+
+
+
+
+
+# @app.task(name = 'tasks.sender'  ,  bind = True , default_retry_delay=1 )
+# def sender(self  , recorder ) :
+#     print(config.PROXY)
+#     print(config.API_ID)
+#     print(config.API_HASH)
+#     print(config.BOT_TOKEN)
+#     print(config.BACKUP_CHANNEL)
+#     print(recorder)
 
 
 
