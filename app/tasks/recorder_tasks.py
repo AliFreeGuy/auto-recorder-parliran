@@ -121,6 +121,7 @@ def downloader(self):
 
         command = [
     'ffmpeg',
+    '-y',
     '-fflags', '+genpts',
     '-i', STREAM_URL,
     '-i', WATERMARK_IMAGE,  # فایل تصویر واترمارک
