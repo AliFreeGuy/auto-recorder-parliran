@@ -111,22 +111,23 @@ def downloader(self):
         recording_file = date_dir / f'{jdate}_{jtime}_none.mp4'
 
         command = [
-            'ffmpeg',
-            '-y',
-            '-fflags', '+genpts',
-            '-i', STREAM_URL,
-            '-i', WATERMARK_IMAGE,
-            '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay=(main_w-overlay_w)/2:main_h-overlay_h-20:enable='gte(t,1)'",
-            '-c:v', 'libx264',
-            '-crf', '28',
-            '-preset', 'slow',
-            '-c:a', 'aac',
-            '-b:a', '64k',
-            '-vsync', '1',
-            '-async', '1',
-            '-f', 'mp4',
-            recording_file
-        ]
+        'ffmpeg',
+        '-y',
+        '-rtbufsize', '500M',  # برای مدیریت بافر ورودی
+        '-i', STREAM_URL,
+        '-i', WATERMARK_IMAGE,
+        '-filter_complex', f"[1:v]scale={watermark_size}[watermark];[0:v][watermark]overlay=(main_w-overlay_w)/2:main_h-overlay_h-20:enable='gte(t,1)'",
+        '-c:v', 'libx264',
+        '-preset', 'veryfast',  # استفاده از preset سریع‌تر برای کاهش زمان پردازش
+        '-crf', '28',  # تنظیم CRF برای کاهش کیفیت و حجم
+        '-c:a', 'aac',
+        '-b:a', '64k',  # کاهش بیت‌ریت صدا برای کاهش حجم فایل
+        '-vsync', 'vfr',  # تنظیم sync برای هماهنگی بهتر صدا و تصویر
+        '-af', 'aresample=async=1',  # استفاده از resample برای هماهنگ‌سازی صدا
+        '-fflags', '+genpts',  # برای تولید timestamps جدید
+        '-f', 'mp4',
+        recording_file
+    ]
 
         print(f" ############### Recording saved as: {recording_file} ############### ")
         cache.create_recorder(
@@ -180,13 +181,36 @@ def record_last_5min(self):
                 'ffmpeg',
                 '-y',
                 '-t', str(segment_duration),
+                '-rtbufsize', '100M',
                 '-i', STREAM_URL,
                 '-c:v', 'libx264',
                 '-preset', 'veryfast',
+                '-crf', '28',  # تنظیم CRF برای کاهش کیفیت
                 '-c:a', 'aac',
                 '-f', 'mp4',
+                '-vsync', 'vfr',
+                '-af', 'aresample=async=1',
+                '-fflags', '+genpts',
                 temp_filename
             ]
+
+
+            # command = [
+            #     'ffmpeg',
+            #     '-y',
+            #     '-t', str(segment_duration),
+            #     '-rtbufsize', '100M',
+            #     '-i', STREAM_URL,
+            #     '-c:v', 'libx264',
+            #     '-preset', 'veryfast',
+            #     '-c:a', 'aac',
+            #     '-f', 'mp4',
+            #     '-vsync', 'vfr',
+            #     '-af', 'aresample=async=1',
+            #     '-fflags', '+genpts',
+            #     temp_filename
+            # ]
+
             
             subprocess.run(command, check=True)
             
